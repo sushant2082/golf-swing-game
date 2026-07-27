@@ -1,0 +1,6 @@
+# Image processing for the offline silhouette pipeline.
+Pillow>=10.2
+
+# Background removal (U^2-Net). Optional: without it, silhouette.py assumes
+# your source images already have transparent backgrounds.
+rembg>=2.0.56
