@@ -68,3 +68,11 @@ htmlcov/
 # --- pipeline working files ---
 pipeline/sources/
 pipeline/.venv/
+
+# --- swing video pipeline ---
+pipeline/.venv/
+pipeline/.work/
+pipeline/clips/
+demo.mov
+public/swings/_smoketest/
+pipeline/swings.json

@@ -1,11 +1,25 @@
 import GolferSilhouette from './GolferSilhouette.jsx'
+import SwingPlayer from './SwingPlayer.jsx'
 import { MAX_STAGE } from '../game/puzzle.js'
 
+/**
+ * Stage captions differ by medium: video keeps the silhouette all the way to
+ * the reveal and simply sharpens it, while the procedural figure leaks colour
+ * part by part.
+ */
 const STAGE_HINTS = {
-  1: 'Silhouette only',
-  2: 'Club and shoes revealed',
-  3: 'Clothing revealed',
-  4: 'Full reveal',
+  video: {
+    1: 'Silhouette — coarse',
+    2: 'Silhouette — sharper',
+    3: 'Silhouette — full detail',
+    4: 'Full reveal',
+  },
+  drawn: {
+    1: 'Silhouette only',
+    2: 'Club and shoes revealed',
+    3: 'Clothing revealed',
+    4: 'Full reveal',
+  },
 }
 
 /**
@@ -21,7 +35,14 @@ export default function SilhouetteReveal({ player, stage, revealed = false }) {
   return (
     <div className="w-full">
       <div className="relative overflow-hidden rounded-2xl border border-stone-200 bg-gradient-to-b from-stone-50 to-stone-100 shadow-sm dark:border-stone-800 dark:from-stone-900 dark:to-stone-950">
-        {player.images ? (
+        {player.swing ? (
+          <SwingPlayer
+            swing={player.swing}
+            stage={shown}
+            revealed={revealed}
+            playerName={player.name}
+          />
+        ) : player.images ? (
           /* Processed photography, if this player has any — see pipeline/. */
           <img
             src={player.images[shown]}
@@ -63,7 +84,7 @@ export default function SilhouetteReveal({ player, stage, revealed = false }) {
           ))}
         </div>
         <p className="text-xs font-medium text-stone-500 dark:text-stone-400">
-          {STAGE_HINTS[shown]}
+          {STAGE_HINTS[player.swing ? 'video' : 'drawn'][shown]}
         </p>
       </div>
     </div>

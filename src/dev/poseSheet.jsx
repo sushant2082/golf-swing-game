@@ -8,6 +8,7 @@
 import { createRoot } from 'react-dom/client'
 import '../index.css'
 import GolferSilhouette from '../components/GolferSilhouette.jsx'
+import SwingPlayer from '../components/SwingPlayer.jsx'
 import { POSES } from '../game/skeleton.js'
 import { PLAYERS } from '../data/players.js'
 
@@ -47,6 +48,26 @@ function Sheet() {
     <div className="mx-auto max-w-6xl bg-stone-50 p-6 text-stone-900 dark:bg-stone-950 dark:text-stone-100">
       <h1 className="mb-1 text-2xl font-bold">Pose sheet</h1>
       <p className="mb-6 text-sm text-stone-500 dark:text-stone-400">Dev only — not shipped in the build.</p>
+
+      <h2 className="mb-2 text-lg font-semibold">Swing video stages (pipeline output)</h2>
+      <div className="mb-8 grid grid-cols-4 gap-3">
+        {[1, 2, 3, 4].map((stage) => (
+          <Cell key={stage} label={`video · stage ${stage}`}>
+            <SwingPlayer
+              swing={{
+                1: '/swings/_smoketest/1.mp4',
+                2: '/swings/_smoketest/2.mp4',
+                3: '/swings/_smoketest/3.mp4',
+                4: '/swings/_smoketest/4.mp4',
+                poster: '/swings/_smoketest/poster.jpg',
+              }}
+              stage={stage}
+              revealed={stage === 4}
+              playerName="Smoke test"
+            />
+          </Cell>
+        ))}
+      </div>
 
       <h2 className="mb-2 text-lg font-semibold">Poses × reveal stage</h2>
       <div className="mb-8 grid grid-cols-4 gap-3">
