@@ -1,0 +1,1840 @@
+{
+  "slice": "liv",
+  "generatedNote": "Compiled from Wikipedia's Category:LIV_Golf_players (91 entries) plus livgolf.com/teams and the 2022-2026 LIV Golf League Wikipedia season-roster pages for recent signings not yet categorized (Victor Perez, Elvis Smylie, Tom McKibbin, Frederik Kjettrup, Younghan Song, Minkyu Kim, Do-Yeob Mun, Yosuke Asaji). Every field verified per-player via WebSearch/WebFetch against Wikipedia player pages (or livgolf.com/PGA Tour profiles for a few lesser-known internationals) during this session; unverifiable fields were left null rather than guessed.",
+  "incomplete": false,
+  "players": [
+    {
+      "id": "abraham-ancer",
+      "name": "Abraham Ancer",
+      "aliases": [
+        "Ancer"
+      ],
+      "tour": "LIV",
+      "country": "Mexico",
+      "born": "1991-02-27",
+      "heightCm": 170,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Abraham_Ancer"
+      ]
+    },
+    {
+      "id": "adrian-meronk",
+      "name": "Adrian Meronk",
+      "aliases": [
+        "Meronk"
+      ],
+      "tour": "LIV",
+      "country": "Poland",
+      "born": "1993-05-31",
+      "heightCm": 197,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adrian_Meronk"
+      ]
+    },
+    {
+      "id": "adrian-otaegui",
+      "name": "Adrian Otaegui",
+      "aliases": [
+        "Otaegui",
+        "Adrián Otaegui"
+      ],
+      "tour": "LIV",
+      "country": "Spain",
+      "born": "1992-11-21",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adrián_Otaegui"
+      ]
+    },
+    {
+      "id": "an-byeong-hun",
+      "name": "An Byeong-hun",
+      "aliases": [
+        "An",
+        "Byeong Hun An",
+        "Byeong-Hun An"
+      ],
+      "tour": "LIV",
+      "country": "South Korea",
+      "born": "1991-09-17",
+      "heightCm": 187,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Byeong_Hun_An"
+      ]
+    },
+    {
+      "id": "andy-ogletree",
+      "name": "Andy Ogletree",
+      "aliases": [
+        "Ogletree",
+        "Andrew Ogletree"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1998-04-03",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 3,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Andy_Ogletree"
+      ]
+    },
+    {
+      "id": "anirban-lahiri",
+      "name": "Anirban Lahiri",
+      "aliases": [
+        "Lahiri"
+      ],
+      "tour": "LIV",
+      "country": "India",
+      "born": "1987-06-29",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 18,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Anirban_Lahiri"
+      ]
+    },
+    {
+      "id": "anthony-kim",
+      "name": "Anthony Kim",
+      "aliases": [
+        "Kim",
+        "AK"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1985-06-19",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Anthony_Kim"
+      ]
+    },
+    {
+      "id": "ben-campbell",
+      "name": "Ben Campbell",
+      "aliases": [
+        "Campbell"
+      ],
+      "tour": "LIV",
+      "country": "New Zealand",
+      "born": "1991-08-20",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 4,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ben_Campbell_(New_Zealand_golfer)"
+      ]
+    },
+    {
+      "id": "ben-schmidt",
+      "name": "Ben Schmidt",
+      "aliases": [
+        "Schmidt"
+      ],
+      "tour": "LIV",
+      "country": "England",
+      "born": "2002-07-30",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 1,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ben_Schmidt"
+      ]
+    },
+    {
+      "id": "bernd-wiesberger",
+      "name": "Bernd Wiesberger",
+      "aliases": [
+        "Wiesberger"
+      ],
+      "tour": "LIV",
+      "country": "Austria",
+      "born": "1985-10-08",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 13,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bernd_Wiesberger"
+      ]
+    },
+    {
+      "id": "bjorn-hellgren",
+      "name": "Björn Hellgren",
+      "aliases": [
+        "Hellgren",
+        "Bjorn Hellgren"
+      ],
+      "tour": "LIV",
+      "country": "Sweden",
+      "born": "1990-11-21",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 8,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bj%C3%B6rn_Hellgren"
+      ]
+    },
+    {
+      "id": "blake-windred",
+      "name": "Blake Windred",
+      "aliases": [
+        "Windred"
+      ],
+      "tour": "LIV",
+      "country": "Australia",
+      "born": "1997-12-03",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 1,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Blake_Windred"
+      ]
+    },
+    {
+      "id": "branden-grace",
+      "name": "Branden Grace",
+      "aliases": [
+        "Grace"
+      ],
+      "tour": "LIV",
+      "country": "South Africa",
+      "born": "1988-05-20",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 2,
+      "worldwideWins": 15,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Branden_Grace"
+      ]
+    },
+    {
+      "id": "brendan-steele",
+      "name": "Brendan Steele",
+      "aliases": [
+        "Steele"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1983-04-05",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 11,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Brendan_Steele"
+      ]
+    },
+    {
+      "id": "brooks-koepka",
+      "name": "Brooks Koepka",
+      "aliases": [
+        "Koepka"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1990-05-03",
+      "heightCm": 183,
+      "majors": 5,
+      "pgaTourWins": 9,
+      "worldwideWins": 21,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Brooks_Koepka"
+      ]
+    },
+    {
+      "id": "bryson-dechambeau",
+      "name": "Bryson DeChambeau",
+      "aliases": [
+        "DeChambeau",
+        "Bryson"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1993-09-16",
+      "heightCm": 185,
+      "majors": 2,
+      "pgaTourWins": 9,
+      "worldwideWins": 16,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bryson_DeChambeau"
+      ]
+    },
+    {
+      "id": "bubba-watson",
+      "name": "Bubba Watson",
+      "aliases": [
+        "Watson",
+        "Gerry Lester Watson Jr."
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1978-11-05",
+      "heightCm": 191,
+      "majors": 2,
+      "pgaTourWins": 12,
+      "worldwideWins": 15,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bubba_Watson"
+      ]
+    },
+    {
+      "id": "caleb-surratt",
+      "name": "Caleb Surratt",
+      "aliases": [
+        "Surratt"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "2004-03-16",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": null,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Caleb_Surratt"
+      ]
+    },
+    {
+      "id": "cameron-smith",
+      "name": "Cameron Smith",
+      "aliases": [
+        "Cam Smith",
+        "Smith"
+      ],
+      "tour": "LIV",
+      "country": "Australia",
+      "born": "1993-08-18",
+      "heightCm": 180,
+      "majors": 1,
+      "pgaTourWins": 6,
+      "worldwideWins": 12,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cameron_Smith_(golfer)"
+      ]
+    },
+    {
+      "id": "cameron-tringale",
+      "name": "Cameron Tringale",
+      "aliases": [
+        "Tringale"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1987-08-24",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 1,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cameron_Tringale"
+      ]
+    },
+    {
+      "id": "carlos-ortiz",
+      "name": "Carlos Ortiz",
+      "aliases": [
+        "Ortiz"
+      ],
+      "tour": "LIV",
+      "country": "Mexico",
+      "born": "1991-04-24",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 10,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Carlos_Ortiz_(golfer)"
+      ]
+    },
+    {
+      "id": "charl-schwartzel",
+      "name": "Charl Schwartzel",
+      "aliases": [
+        "Schwartzel"
+      ],
+      "tour": "LIV",
+      "country": "South Africa",
+      "born": "1984-08-31",
+      "heightCm": 180,
+      "majors": 1,
+      "pgaTourWins": 2,
+      "worldwideWins": 16,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Charl_Schwartzel"
+      ]
+    },
+    {
+      "id": "charles-howell-iii",
+      "name": "Charles Howell III",
+      "aliases": [
+        "Howell",
+        "Howell III",
+        "CH3"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1979-06-20",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 4,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Charles_Howell_III"
+      ]
+    },
+    {
+      "id": "chase-koepka",
+      "name": "Chase Koepka",
+      "aliases": [
+        "Koepka"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1994-01-30",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": null,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chase_Koepka"
+      ]
+    },
+    {
+      "id": "danny-lee",
+      "name": "Danny Lee",
+      "aliases": [
+        "Lee",
+        "Danny Jin-Myung Lee"
+      ],
+      "tour": "LIV",
+      "country": "New Zealand",
+      "born": "1990-07-24",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 4,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Danny_Lee_(golfer)"
+      ]
+    },
+    {
+      "id": "david-puig",
+      "name": "David Puig",
+      "aliases": [
+        "Puig"
+      ],
+      "tour": "LIV",
+      "country": "Spain",
+      "born": "2001-12-07",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 3,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/David_Puig"
+      ]
+    },
+    {
+      "id": "dean-burmester",
+      "name": "Dean Burmester",
+      "aliases": [
+        "Burmester"
+      ],
+      "tour": "LIV",
+      "country": "South Africa",
+      "born": "1989-06-02",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 14,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dean_Burmester"
+      ]
+    },
+    {
+      "id": "do-yeob-mun",
+      "name": "Mun Do-yeob",
+      "aliases": [
+        "Mun",
+        "Doyeob Mun",
+        "Do-Yeob Mun",
+        "Do Mun"
+      ],
+      "tour": "LIV",
+      "country": "South Korea",
+      "born": "1991-08-11",
+      "heightCm": 168,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mun_Do-yeob"
+      ]
+    },
+    {
+      "id": "dustin-johnson",
+      "name": "Dustin Johnson",
+      "aliases": [
+        "DJ",
+        "Johnson"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1984-06-22",
+      "heightCm": 193,
+      "majors": 2,
+      "pgaTourWins": 24,
+      "worldwideWins": 30,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dustin_Johnson"
+      ]
+    },
+    {
+      "id": "elvis-smylie",
+      "name": "Elvis Smylie",
+      "aliases": [
+        "Smylie"
+      ],
+      "tour": "LIV",
+      "country": "Australia",
+      "born": "2002-04-23",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 3,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Elvis_Smylie"
+      ]
+    },
+    {
+      "id": "eugenio-chacarra",
+      "name": "Eugenio Chacarra",
+      "aliases": [
+        "Chacarra",
+        "Eugenio Lopez-Chacarra",
+        "Eugenio Lopez-Chacarra Coto"
+      ],
+      "tour": "LIV",
+      "country": "Spain",
+      "born": "2000-03-22",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eugenio_Chacarra"
+      ]
+    },
+    {
+      "id": "frederik-kjettrup",
+      "name": "Frederik Kjettrup",
+      "aliases": [
+        "Kjettrup"
+      ],
+      "tour": "LIV",
+      "country": "Denmark",
+      "born": "2000-01-02",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 3,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Frederik_Kjettrup"
+      ]
+    },
+    {
+      "id": "graeme-mcdowell",
+      "name": "Graeme McDowell",
+      "aliases": [
+        "McDowell",
+        "G-Mac"
+      ],
+      "tour": "LIV",
+      "country": "Northern Ireland",
+      "born": "1979-07-30",
+      "heightCm": 180,
+      "majors": 1,
+      "pgaTourWins": 4,
+      "worldwideWins": 16,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Graeme_McDowell"
+      ]
+    },
+    {
+      "id": "harold-varner-iii",
+      "name": "Harold Varner III",
+      "aliases": [
+        "Varner",
+        "Varner III",
+        "HV3"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1990-08-15",
+      "heightCm": 173,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 3,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Harold_Varner_III"
+      ]
+    },
+    {
+      "id": "hennie-du-plessis",
+      "name": "Hennie du Plessis",
+      "aliases": [
+        "du Plessis",
+        "Du Plessis"
+      ],
+      "tour": "LIV",
+      "country": "South Africa",
+      "born": "1996-10-14",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 5,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hennie_du_Plessis"
+      ]
+    },
+    {
+      "id": "henrik-stenson",
+      "name": "Henrik Stenson",
+      "aliases": [
+        "Stenson"
+      ],
+      "tour": "LIV",
+      "country": "Sweden",
+      "born": "1976-04-05",
+      "heightCm": 188,
+      "majors": 1,
+      "pgaTourWins": 6,
+      "worldwideWins": 22,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Henrik_Stenson"
+      ]
+    },
+    {
+      "id": "hideto-tanihara",
+      "name": "Hideto Tanihara",
+      "aliases": [
+        "Tanihara"
+      ],
+      "tour": "LIV",
+      "country": "Japan",
+      "born": "1978-11-16",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 20,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hideto_Tanihara"
+      ]
+    },
+    {
+      "id": "hudson-swafford",
+      "name": "Hudson Swafford",
+      "aliases": [
+        "Swafford"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1987-09-09",
+      "heightCm": 191,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hudson_Swafford"
+      ]
+    },
+    {
+      "id": "ian-poulter",
+      "name": "Ian Poulter",
+      "aliases": [
+        "Poulter"
+      ],
+      "tour": "LIV",
+      "country": "England",
+      "born": "1976-01-10",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 17,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ian_Poulter"
+      ]
+    },
+    {
+      "id": "james-piot",
+      "name": "James Piot",
+      "aliases": [
+        "Piot"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1998-10-14",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": null,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/James_Piot"
+      ]
+    },
+    {
+      "id": "jang-yu-bin",
+      "name": "Jang Yu-bin",
+      "aliases": [
+        "Yang Yubin",
+        "Yubin Yang",
+        "Jang",
+        "Yu-bin Jang",
+        "Yubin Jang"
+      ],
+      "tour": "LIV",
+      "country": "South Korea",
+      "born": "2002-06-11",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jang_Yu-bin"
+      ]
+    },
+    {
+      "id": "jason-kokrak",
+      "name": "Jason Kokrak",
+      "aliases": [
+        "Kokrak"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1985-05-22",
+      "heightCm": 193,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 11,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jason_Kokrak"
+      ]
+    },
+    {
+      "id": "jc-ritchie",
+      "name": "J. C. Ritchie",
+      "aliases": [
+        "Ritchie",
+        "JC Ritchie",
+        "Juan Carlo Ritchie"
+      ],
+      "tour": "LIV",
+      "country": "South Africa",
+      "born": "1994-02-24",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 16,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/J._C._Ritchie"
+      ]
+    },
+    {
+      "id": "jediah-morgan",
+      "name": "Jediah Morgan",
+      "aliases": [
+        "Morgan"
+      ],
+      "tour": "LIV",
+      "country": "Australia",
+      "born": "1999-11-30",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 1,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jediah_Morgan"
+      ]
+    },
+    {
+      "id": "jinichiro-kozuma",
+      "name": "Jinichiro Kozuma",
+      "aliases": [
+        "Kozuma"
+      ],
+      "tour": "LIV",
+      "country": "Japan",
+      "born": "1994-07-07",
+      "heightCm": 165,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jinichiro_Kozuma"
+      ]
+    },
+    {
+      "id": "joaquin-niemann",
+      "name": "Joaquin Niemann",
+      "aliases": [
+        "Niemann",
+        "Joaquín Niemann"
+      ],
+      "tour": "LIV",
+      "country": "Chile",
+      "born": "1998-11-07",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 2,
+      "worldwideWins": 21,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Joaquín_Niemann"
+      ]
+    },
+    {
+      "id": "john-catlin",
+      "name": "John Catlin",
+      "aliases": [
+        "Catlin"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1990-11-15",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 15,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/John_Catlin_(golfer)"
+      ]
+    },
+    {
+      "id": "jon-rahm",
+      "name": "Jon Rahm",
+      "aliases": [
+        "Rahm"
+      ],
+      "tour": "LIV",
+      "country": "Spain",
+      "born": "1994-11-10",
+      "heightCm": 188,
+      "majors": 2,
+      "pgaTourWins": 11,
+      "worldwideWins": 24,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jon_Rahm"
+      ]
+    },
+    {
+      "id": "josele-ballester",
+      "name": "Josele Ballester",
+      "aliases": [
+        "Ballester",
+        "Jose Luis Ballester",
+        "Jose Luis Ballester Barrio"
+      ],
+      "tour": "LIV",
+      "country": "Spain",
+      "born": "2003-08-18",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 1,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Josele_Ballester"
+      ]
+    },
+    {
+      "id": "justin-harding",
+      "name": "Justin Harding",
+      "aliases": [
+        "Harding"
+      ],
+      "tour": "LIV",
+      "country": "South Africa",
+      "born": "1986-02-09",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 11,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Justin_Harding"
+      ]
+    },
+    {
+      "id": "kalle-samooja",
+      "name": "Kalle Samooja",
+      "aliases": [
+        "Samooja"
+      ],
+      "tour": "LIV",
+      "country": "Finland",
+      "born": "1988-01-25",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": null,
+      "worldwideWins": 12,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kalle_Samooja"
+      ]
+    },
+    {
+      "id": "kevin-na",
+      "name": "Kevin Na",
+      "aliases": [
+        "Na"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1983-09-15",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 5,
+      "worldwideWins": 9,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kevin_Na"
+      ]
+    },
+    {
+      "id": "kieran-vincent",
+      "name": "Kieran Vincent",
+      "aliases": [
+        "Vincent (Kieran)"
+      ],
+      "tour": "LIV",
+      "country": "Zimbabwe",
+      "born": "1997-11-24",
+      "heightCm": 173,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 3,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kieran_Vincent"
+      ]
+    },
+    {
+      "id": "laurie-canter",
+      "name": "Laurie Canter",
+      "aliases": [
+        "Canter",
+        "Laurence Canter"
+      ],
+      "tour": "LIV",
+      "country": "England",
+      "born": "1989-11-03",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 3,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Laurie_Canter"
+      ]
+    },
+    {
+      "id": "lee-chieh-po",
+      "name": "Lee Chieh-po",
+      "aliases": [
+        "Lee",
+        "Chieh-po Lee",
+        "Max Lee"
+      ],
+      "tour": "LIV",
+      "country": "Taiwan",
+      "born": "1994-11-01",
+      "heightCm": 165,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 9,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lee_Chieh-po"
+      ]
+    },
+    {
+      "id": "lee-westwood",
+      "name": "Lee Westwood",
+      "aliases": [
+        "Westwood"
+      ],
+      "tour": "LIV",
+      "country": "England",
+      "born": "1973-04-24",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 2,
+      "worldwideWins": 44,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lee_Westwood"
+      ]
+    },
+    {
+      "id": "louis-oosthuizen",
+      "name": "Louis Oosthuizen",
+      "aliases": [
+        "Oosthuizen"
+      ],
+      "tour": "LIV",
+      "country": "South Africa",
+      "born": "1982-10-19",
+      "heightCm": 175,
+      "majors": 1,
+      "pgaTourWins": 1,
+      "worldwideWins": 16,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Louis_Oosthuizen"
+      ]
+    },
+    {
+      "id": "luis-masaveu",
+      "name": "Luis Masaveu",
+      "aliases": [
+        "Masaveu"
+      ],
+      "tour": "LIV",
+      "country": "Spain",
+      "born": "2002-12-17",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": null,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Luis_Masaveu"
+      ]
+    },
+    {
+      "id": "marc-leishman",
+      "name": "Marc Leishman",
+      "aliases": [
+        "Leishman"
+      ],
+      "tour": "LIV",
+      "country": "Australia",
+      "born": "1983-10-24",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 6,
+      "worldwideWins": 15,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Marc_Leishman"
+      ]
+    },
+    {
+      "id": "martin-kaymer",
+      "name": "Martin Kaymer",
+      "aliases": [
+        "Kaymer"
+      ],
+      "tour": "LIV",
+      "country": "Germany",
+      "born": "1984-12-28",
+      "heightCm": 184,
+      "majors": 2,
+      "pgaTourWins": 3,
+      "worldwideWins": 23,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Martin_Kaymer"
+      ]
+    },
+    {
+      "id": "matt-jones",
+      "name": "Matt Jones",
+      "aliases": [
+        "Jones"
+      ],
+      "tour": "LIV",
+      "country": "Australia",
+      "born": "1980-04-19",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 2,
+      "worldwideWins": 4,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Matt_Jones_(golfer)"
+      ]
+    },
+    {
+      "id": "matthew-wolff",
+      "name": "Matthew Wolff",
+      "aliases": [
+        "Wolff"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1999-04-14",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 1,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Matthew_Wolff"
+      ]
+    },
+    {
+      "id": "michael-la-sasso",
+      "name": "Michael La Sasso",
+      "aliases": [
+        "La Sasso"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "2004-03-25",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": null,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Michael_La_Sasso",
+        "https://www.golfmonthly.com/tour/michael-la-sasso-golfer-facts-bio-wins"
+      ]
+    },
+    {
+      "id": "miguel-tabuena",
+      "name": "Miguel Tabuena",
+      "aliases": [
+        "Tabuena"
+      ],
+      "tour": "LIV",
+      "country": "Philippines",
+      "born": "1994-10-13",
+      "heightCm": 168,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 21,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Miguel_Tabuena"
+      ]
+    },
+    {
+      "id": "minkyu-kim",
+      "name": "Kim Min-kyu",
+      "aliases": [
+        "Kim",
+        "Minkyu Kim",
+        "Min-kyu Kim"
+      ],
+      "tour": "LIV",
+      "country": "South Korea",
+      "born": "2001-03-24",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 7,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kim_Min-kyu_(golfer)"
+      ]
+    },
+    {
+      "id": "mito-pereira",
+      "name": "Mito Pereira",
+      "aliases": [
+        "Pereira",
+        "Guillermo Pereira"
+      ],
+      "tour": "LIV",
+      "country": "Chile",
+      "born": "1995-03-31",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 13,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mito_Pereira"
+      ]
+    },
+    {
+      "id": "oliver-bekker",
+      "name": "Oliver Bekker",
+      "aliases": [
+        "Bekker"
+      ],
+      "tour": "LIV",
+      "country": "South Africa",
+      "born": "1984-12-11",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 10,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Oliver_Bekker"
+      ]
+    },
+    {
+      "id": "oliver-fisher",
+      "name": "Oliver Fisher",
+      "aliases": [
+        "Fisher"
+      ],
+      "tour": "LIV",
+      "country": "England",
+      "born": "1988-09-13",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": null,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Oliver_Fisher"
+      ]
+    },
+    {
+      "id": "ollie-schniederjans",
+      "name": "Ollie Schniederjans",
+      "aliases": [
+        "Schniederjans",
+        "Oliver Schniederjans"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1993-06-15",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 2,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ollie_Schniederjans"
+      ]
+    },
+    {
+      "id": "pablo-larrazabal",
+      "name": "Pablo Larrazábal",
+      "aliases": [
+        "Larrazabal",
+        "Larrazábal"
+      ],
+      "tour": "LIV",
+      "country": "Spain",
+      "born": "1983-05-15",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 10,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pablo_Larraz%C3%A1bal"
+      ]
+    },
+    {
+      "id": "pat-perez",
+      "name": "Pat Perez",
+      "aliases": [
+        "Perez",
+        "Patrick Perez"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1976-03-01",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 4,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pat_Perez"
+      ]
+    },
+    {
+      "id": "patrick-reed",
+      "name": "Patrick Reed",
+      "aliases": [
+        "Reed"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1990-08-05",
+      "heightCm": 183,
+      "majors": 1,
+      "pgaTourWins": 9,
+      "worldwideWins": 13,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Patrick_Reed"
+      ]
+    },
+    {
+      "id": "paul-casey",
+      "name": "Paul Casey",
+      "aliases": [
+        "Casey"
+      ],
+      "tour": "LIV",
+      "country": "England",
+      "born": "1977-07-21",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 21,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Paul_Casey"
+      ]
+    },
+    {
+      "id": "peter-uihlein",
+      "name": "Peter Uihlein",
+      "aliases": [
+        "Uihlein"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1989-08-29",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Peter_Uihlein"
+      ]
+    },
+    {
+      "id": "phachara-khongwatmai",
+      "name": "Phachara Khongwatmai",
+      "aliases": [
+        "Khongwatmai"
+      ],
+      "tour": "LIV",
+      "country": "Thailand",
+      "born": "1999-05-03",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 10,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Phachara_Khongwatmai"
+      ]
+    },
+    {
+      "id": "phil-mickelson",
+      "name": "Phil Mickelson",
+      "aliases": [
+        "Mickelson",
+        "Lefty"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1970-06-16",
+      "heightCm": 191,
+      "majors": 6,
+      "pgaTourWins": 45,
+      "worldwideWins": 57,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Phil_Mickelson"
+      ]
+    },
+    {
+      "id": "ratchanon-chantananuwat",
+      "name": "Ratchanon Chantananuwat",
+      "aliases": [
+        "Chantananuwat",
+        "TK Chantananuwat",
+        "TK"
+      ],
+      "tour": "LIV",
+      "country": "Thailand",
+      "born": "2007-03-04",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 1,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ratchanon_Chantananuwat"
+      ]
+    },
+    {
+      "id": "richard-bland",
+      "name": "Richard Bland",
+      "aliases": [
+        "Bland"
+      ],
+      "tour": "LIV",
+      "country": "England",
+      "born": "1973-02-03",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 4,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Richard_Bland_(golfer)"
+      ]
+    },
+    {
+      "id": "richard-t-lee",
+      "name": "Richard T. Lee",
+      "aliases": [
+        "Lee",
+        "Richard Lee",
+        "Richard Taehoon Lee"
+      ],
+      "tour": "LIV",
+      "country": "Canada",
+      "born": "1990-10-29",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Richard_T._Lee_(golfer)"
+      ]
+    },
+    {
+      "id": "ryosuke-kinoshita",
+      "name": "Ryosuke Kinoshita",
+      "aliases": [
+        "Kinoshita"
+      ],
+      "tour": "LIV",
+      "country": "Japan",
+      "born": "1991-07-16",
+      "heightCm": 174,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 4,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ryosuke_Kinoshita"
+      ]
+    },
+    {
+      "id": "sadom-kaewkanjana",
+      "name": "Sadom Kaewkanjana",
+      "aliases": [
+        "Kaewkanjana"
+      ],
+      "tour": "LIV",
+      "country": "Thailand",
+      "born": "1998-07-06",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 11,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sadom_Kaewkanjana"
+      ]
+    },
+    {
+      "id": "sam-horsfield",
+      "name": "Sam Horsfield",
+      "aliases": [
+        "Horsfield"
+      ],
+      "tour": "LIV",
+      "country": "England",
+      "born": "1996-10-08",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 3,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sam_Horsfield"
+      ]
+    },
+    {
+      "id": "scott-vincent",
+      "name": "Scott Vincent",
+      "aliases": [
+        "Vincent (Scott)"
+      ],
+      "tour": "LIV",
+      "country": "Zimbabwe",
+      "born": "1992-05-20",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Scott_Vincent_(golfer)"
+      ]
+    },
+    {
+      "id": "sebastian-munoz",
+      "name": "Sebastián Muñoz",
+      "aliases": [
+        "Munoz",
+        "Muñoz"
+      ],
+      "tour": "LIV",
+      "country": "Colombia",
+      "born": "1993-01-04",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Mu%C3%B1oz"
+      ]
+    },
+    {
+      "id": "sergio-garcia",
+      "name": "Sergio García",
+      "aliases": [
+        "Garcia",
+        "García",
+        "El Niño"
+      ],
+      "tour": "LIV",
+      "country": "Spain",
+      "born": "1980-01-09",
+      "heightCm": 178,
+      "majors": 1,
+      "pgaTourWins": 11,
+      "worldwideWins": 38,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sergio_Garcia"
+      ]
+    },
+    {
+      "id": "shaun-norris",
+      "name": "Shaun Norris",
+      "aliases": [
+        "Norris"
+      ],
+      "tour": "LIV",
+      "country": "South Africa",
+      "born": "1982-05-14",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 15,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shaun_Norris_(golfer)"
+      ]
+    },
+    {
+      "id": "sihwan-kim",
+      "name": "Sihwan Kim",
+      "aliases": [
+        "Kim"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1988-12-04",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 2,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sihwan_Kim"
+      ]
+    },
+    {
+      "id": "talor-gooch",
+      "name": "Talor Gooch",
+      "aliases": [
+        "Gooch"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1991-11-14",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Talor_Gooch"
+      ]
+    },
+    {
+      "id": "thomas-detry",
+      "name": "Thomas Detry",
+      "aliases": [
+        "Detry"
+      ],
+      "tour": "LIV",
+      "country": "Belgium",
+      "born": "1993-01-13",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 3,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thomas_Detry"
+      ]
+    },
+    {
+      "id": "thomas-pieters",
+      "name": "Thomas Pieters",
+      "aliases": [
+        "Pieters"
+      ],
+      "tour": "LIV",
+      "country": "Belgium",
+      "born": "1992-01-27",
+      "heightCm": 196,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 7,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thomas_Pieters"
+      ]
+    },
+    {
+      "id": "tom-mckibbin",
+      "name": "Tom McKibbin",
+      "aliases": [
+        "McKibbin"
+      ],
+      "tour": "LIV",
+      "country": "Northern Ireland",
+      "born": "2002-12-19",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 3,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tom_McKibbin_(golfer)"
+      ]
+    },
+    {
+      "id": "travis-smyth",
+      "name": "Travis Smyth",
+      "aliases": [
+        "Smyth"
+      ],
+      "tour": "LIV",
+      "country": "Australia",
+      "born": "1994-12-29",
+      "heightCm": 193,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 4,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Travis_Smyth"
+      ]
+    },
+    {
+      "id": "turk-pettit",
+      "name": "Turk Pettit",
+      "aliases": [
+        "Pettit"
+      ],
+      "tour": "LIV",
+      "country": "United States",
+      "born": "1998-11-16",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 2,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Turk_Pettit"
+      ]
+    },
+    {
+      "id": "tyrrell-hatton",
+      "name": "Tyrrell Hatton",
+      "aliases": [
+        "Hatton"
+      ],
+      "tour": "LIV",
+      "country": "England",
+      "born": "1991-10-14",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 14,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tyrrell_Hatton"
+      ]
+    },
+    {
+      "id": "victor-perez",
+      "name": "Victor Perez",
+      "aliases": [
+        "Perez"
+      ],
+      "tour": "LIV",
+      "country": "France",
+      "born": "1992-09-02",
+      "heightCm": 198,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 7,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Victor_Perez_(golfer)"
+      ]
+    },
+    {
+      "id": "wade-ormsby",
+      "name": "Wade Ormsby",
+      "aliases": [
+        "Ormsby"
+      ],
+      "tour": "LIV",
+      "country": "Australia",
+      "born": "1980-03-31",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": null,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wade_Ormsby"
+      ]
+    },
+    {
+      "id": "yosuke-asaji",
+      "name": "Yosuke Asaji",
+      "aliases": [
+        "Asaji"
+      ],
+      "tour": "LIV",
+      "country": "Japan",
+      "born": "1993-05-24",
+      "heightCm": 169,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 7,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Yosuke_Asaji"
+      ]
+    },
+    {
+      "id": "younghan-song",
+      "name": "Song Young-han",
+      "aliases": [
+        "Song",
+        "Younghan Song",
+        "Young-han Song"
+      ],
+      "tour": "LIV",
+      "country": "South Korea",
+      "born": "1991-07-12",
+      "heightCm": 179,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 2,
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Song_Young-han"
+      ]
+    },
+    {
+      "id": "yuki-inamori",
+      "name": "Yuki Inamori",
+      "aliases": [
+        "Inamori"
+      ],
+      "tour": "LIV",
+      "country": "Japan",
+      "born": "1994-10-02",
+      "heightCm": 169,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Yuki_Inamori"
+      ]
+    }
+  ]
+}

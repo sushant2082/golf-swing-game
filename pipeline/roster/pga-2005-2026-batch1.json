@@ -1,0 +1,20 @@
+{
+  "slice": "pga-2005-2026",
+  "generatedNote": "Recovered from a research agent whose sub-agents fragmented before it could write its own file; the records themselves were web-verified with sources cited.",
+  "incomplete": true,
+  "players": [
+  {"id":"corey-conners","name":"Corey Conners","aliases":["Conners"],"tour":"PGA","country":"Canada","born":"1992-01-06","heightCm":183,"majors":0,"pgaTourWins":2,"worldwideWins":2,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Corey_Conners"]},
+  {"id":"min-woo-lee","name":"Min Woo Lee","aliases":["Lee","Min Woo"],"tour":"PGA","country":"Australia","born":"1998-07-27","heightCm":null,"majors":0,"pgaTourWins":1,"worldwideWins":5,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Min_Woo_Lee"]},
+  {"id":"christiaan-bezuidenhout","name":"Christiaan Bezuidenhout","aliases":["Bezuidenhout"],"tour":"PGA","country":"South Africa","born":"1994-05-18","heightCm":null,"majors":0,"pgaTourWins":0,"worldwideWins":10,"confidence":"medium","sources":["https://en.wikipedia.org/wiki/Christiaan_Bezuidenhout","https://www.pgatour.com/player/45522/christiaan-bezuidenhout"]},
+  {"id":"taylor-pendrith","name":"Taylor Pendrith","aliases":["Pendrith"],"tour":"PGA","country":"Canada","born":"1991-05-30","heightCm":null,"majors":0,"pgaTourWins":1,"worldwideWins":1,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Taylor_Pendrith"]},
+  {"id":"si-woo-kim","name":"Si Woo Kim","aliases":["Kim Si-woo","Kim"],"tour":"PGA","country":"South Korea","born":"1995-06-28","heightCm":180,"majors":0,"pgaTourWins":4,"worldwideWins":4,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Kim_Si-woo"]},
+  {"id":"mackenzie-hughes","name":"Mackenzie Hughes","aliases":["Hughes"],"tour":"PGA","country":"Canada","born":"1990-11-23","heightCm":183,"majors":0,"pgaTourWins":2,"worldwideWins":2,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Mackenzie_Hughes"]},
+  {"id":"sungjae-im","name":"Sungjae Im","aliases":["Im Sung-jae","Im"],"tour":"PGA","country":"South Korea","born":"1998-03-30","heightCm":183,"majors":0,"pgaTourWins":2,"worldwideWins":2,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Im_Sung-jae"]},
+  {"id":"tom-kim","name":"Tom Kim","aliases":["Kim Joo-hyung","Kim"],"tour":"PGA","country":"South Korea","born":"2002-06-21","heightCm":183,"majors":0,"pgaTourWins":4,"worldwideWins":null,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Tom_Kim"]},
+  {"id":"kyoung-hoon-lee","name":"Kyoung-Hoon Lee","aliases":["Lee Kyoung-hoon","K.H. Lee","Lee"],"tour":"PGA","country":"South Korea","born":"1991-08-24","heightCm":178,"majors":0,"pgaTourWins":2,"worldwideWins":2,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Lee_Kyoung-hoon"]},
+  {"id":"cameron-davis","name":"Cameron Davis","aliases":["Cam Davis","Davis"],"tour":"PGA","country":"Australia","born":"1995-02-21","heightCm":193,"majors":0,"pgaTourWins":2,"worldwideWins":5,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Cameron_Davis_(golfer)"]},
+  {"id":"kevin-kisner","name":"Kevin Kisner","aliases":["Kisner"],"tour":"PGA","country":"United States","born":"1984-02-15","heightCm":178,"majors":0,"pgaTourWins":4,"worldwideWins":4,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Kevin_Kisner"]},
+  {"id":"billy-horschel","name":"Billy Horschel","aliases":["Horschel"],"tour":"PGA","country":"United States","born":"1986-12-07","heightCm":183,"majors":0,"pgaTourWins":8,"worldwideWins":null,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Billy_Horschel"]},
+  {"id":"charley-hoffman","name":"Charley Hoffman","aliases":["Hoffman"],"tour":"PGA","country":"United States","born":"1976-12-27","heightCm":183,"majors":0,"pgaTourWins":4,"worldwideWins":4,"confidence":"high","sources":["https://en.wikipedia.org/wiki/Charley_Hoffman"]}
+  ]
+}

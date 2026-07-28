@@ -1,0 +1,1370 @@
+{
+  "slice": "pga-1985-2004",
+  "generatedNote": "Compiled via 5 parallel research passes, each verifying players against Wikipedia (and pgatour.com where useful) fetched live in this session; excludes anyone who won a men's major (Masters/US Open/Open Championship/PGA Championship) at any point in their career -- senior/Champions Tour majors do not count toward exclusion. Darren Clarke was dropped after confirming his 2011 Open Championship win.",
+  "incomplete": false,
+  "players": [
+    {
+      "id": "colin-montgomerie",
+      "name": "Colin Montgomerie",
+      "aliases": [
+        "Monty",
+        "Montgomerie"
+      ],
+      "tour": "European",
+      "country": "Scotland",
+      "born": "1963-06-23",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 54,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Colin_Montgomerie"
+      ]
+    },
+    {
+      "id": "jesper-parnevik",
+      "name": "Jesper Parnevik",
+      "aliases": [
+        "Parnevik",
+        "Spaceman"
+      ],
+      "tour": "PGA",
+      "country": "Sweden",
+      "born": "1965-03-07",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 5,
+      "worldwideWins": 15,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jesper_Parnevik"
+      ]
+    },
+    {
+      "id": "brad-faxon",
+      "name": "Brad Faxon",
+      "aliases": [
+        "Faxon"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1961-08-01",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 8,
+      "worldwideWins": 21,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Brad_Faxon"
+      ]
+    },
+    {
+      "id": "billy-andrade",
+      "name": "Billy Andrade",
+      "aliases": [
+        "Andrade"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1964-01-25",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 4,
+      "worldwideWins": 13,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Billy_Andrade"
+      ]
+    },
+    {
+      "id": "fred-funk",
+      "name": "Fred Funk",
+      "aliases": [
+        "Funk"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1956-06-14",
+      "heightCm": 173,
+      "majors": 0,
+      "pgaTourWins": 8,
+      "worldwideWins": 29,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fred_Funk"
+      ]
+    },
+    {
+      "id": "loren-roberts",
+      "name": "Loren Roberts",
+      "aliases": [
+        "Roberts",
+        "Boss of the Moss"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1955-06-24",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 8,
+      "worldwideWins": 26,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Loren_Roberts"
+      ]
+    },
+    {
+      "id": "peter-jacobsen",
+      "name": "Peter Jacobsen",
+      "aliases": [
+        "Jacobsen"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1954-03-04",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 7,
+      "worldwideWins": 18,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Peter_Jacobsen"
+      ]
+    },
+    {
+      "id": "chip-beck",
+      "name": "Chip Beck",
+      "aliases": [
+        "Beck",
+        "Charles Beck"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1956-09-12",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 4,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chip_Beck"
+      ]
+    },
+    {
+      "id": "bruce-lietzke",
+      "name": "Bruce Lietzke",
+      "aliases": [
+        "Lietzke"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1951-07-18",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 13,
+      "worldwideWins": 22,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bruce_Lietzke"
+      ]
+    },
+    {
+      "id": "scott-hoch",
+      "name": "Scott Hoch",
+      "aliases": [
+        "Hoch"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1955-11-24",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 11,
+      "worldwideWins": 23,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Scott_Hoch"
+      ]
+    },
+    {
+      "id": "jay-haas",
+      "name": "Jay Haas",
+      "aliases": [
+        "Haas",
+        "Jaybird"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1953-12-02",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 9,
+      "worldwideWins": 33,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jay_Haas"
+      ]
+    },
+    {
+      "id": "craig-parry",
+      "name": "Craig Parry",
+      "aliases": [
+        "Parry",
+        "Popeye"
+      ],
+      "tour": "Australasian",
+      "country": "Australia",
+      "born": "1966-01-12",
+      "heightCm": 168,
+      "majors": 0,
+      "pgaTourWins": 2,
+      "worldwideWins": 23,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Craig_Parry"
+      ]
+    },
+    {
+      "id": "peter-senior",
+      "name": "Peter Senior",
+      "aliases": [
+        "Senior"
+      ],
+      "tour": "Australasian",
+      "country": "Australia",
+      "born": "1959-07-31",
+      "heightCm": 170,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 67,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Peter_Senior"
+      ]
+    },
+    {
+      "id": "robert-gamez",
+      "name": "Robert Gamez",
+      "aliases": [
+        "Gamez"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1968-07-21",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Robert_Gamez"
+      ]
+    },
+    {
+      "id": "john-cook",
+      "name": "John Cook",
+      "aliases": [
+        "Cook",
+        "Cookie"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1957-10-02",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 11,
+      "worldwideWins": 28,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/John_Cook_(golfer)"
+      ]
+    },
+    {
+      "id": "kenny-perry",
+      "name": "Kenny Perry",
+      "aliases": [
+        "James Kenneth Perry",
+        "Perry"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1960-08-10",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 14,
+      "worldwideWins": 27,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kenny_Perry"
+      ]
+    },
+    {
+      "id": "jim-gallagher-jr",
+      "name": "Jim Gallagher Jr.",
+      "aliases": [
+        "James Thomas Gallagher Jr.",
+        "Gallagher"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1961-03-24",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 5,
+      "worldwideWins": 9,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jim_Gallagher_Jr."
+      ]
+    },
+    {
+      "id": "billy-mayfair",
+      "name": "Billy Mayfair",
+      "aliases": [
+        "William Fred Mayfair",
+        "Mayfair"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1966-08-06",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 5,
+      "worldwideWins": null,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Billy_Mayfair"
+      ]
+    },
+    {
+      "id": "david-frost",
+      "name": "David Frost",
+      "aliases": [
+        "David Laurence Frost",
+        "Frost"
+      ],
+      "tour": "PGA",
+      "country": "South Africa",
+      "born": "1959-09-11",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 10,
+      "worldwideWins": 29,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/David_Frost_(golfer)"
+      ]
+    },
+    {
+      "id": "sam-torrance",
+      "name": "Sam Torrance",
+      "aliases": [
+        "Samuel Robert Torrance",
+        "Torrance"
+      ],
+      "tour": "European",
+      "country": "Scotland",
+      "born": "1953-08-24",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 46,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sam_Torrance"
+      ]
+    },
+    {
+      "id": "des-smyth",
+      "name": "Des Smyth",
+      "aliases": [
+        "Desmond John Smyth",
+        "Smyth"
+      ],
+      "tour": "European",
+      "country": "Ireland",
+      "born": "1953-02-12",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 26,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Des_Smyth"
+      ]
+    },
+    {
+      "id": "eamonn-darcy",
+      "name": "Eamonn Darcy",
+      "aliases": [
+        "Eamonn Christopher Darcy",
+        "Darcy"
+      ],
+      "tour": "European",
+      "country": "Ireland",
+      "born": "1952-08-07",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 16,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eamonn_Darcy"
+      ]
+    },
+    {
+      "id": "philip-walton",
+      "name": "Philip Walton",
+      "aliases": [
+        "Philip Joseph Walton",
+        "Walton"
+      ],
+      "tour": "European",
+      "country": "Ireland",
+      "born": "1962-03-28",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 7,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Philip_Walton"
+      ]
+    },
+    {
+      "id": "costantino-rocca",
+      "name": "Costantino Rocca",
+      "aliases": [
+        "Rocca"
+      ],
+      "tour": "European",
+      "country": "Italy",
+      "born": "1956-12-04",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 17,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Costantino_Rocca"
+      ]
+    },
+    {
+      "id": "miguel-angel-jimenez",
+      "name": "Miguel Angel Jimenez",
+      "aliases": [
+        "Miguel Ángel Jiménez",
+        "The Mechanic",
+        "Jimenez"
+      ],
+      "tour": "European",
+      "country": "Spain",
+      "born": "1964-01-05",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 45,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Miguel_%C3%81ngel_Jim%C3%A9nez"
+      ]
+    },
+    {
+      "id": "thomas-bjorn",
+      "name": "Thomas Bjorn",
+      "aliases": [
+        "Thomas Bjørn",
+        "The Great Dane",
+        "Bjorn"
+      ],
+      "tour": "European",
+      "country": "Denmark",
+      "born": "1971-02-18",
+      "heightCm": 189,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 25,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thomas_Bj%C3%B8rn"
+      ]
+    },
+    {
+      "id": "lee-westwood",
+      "name": "Lee Westwood",
+      "aliases": [
+        "Lee John Westwood",
+        "Westwood"
+      ],
+      "tour": "European",
+      "country": "England",
+      "born": "1973-04-24",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 2,
+      "worldwideWins": 44,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lee_Westwood"
+      ]
+    },
+    {
+      "id": "robert-allenby",
+      "name": "Robert Allenby",
+      "aliases": [
+        "Allenby"
+      ],
+      "tour": "Australasian",
+      "country": "Australia",
+      "born": "1971-07-12",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 4,
+      "worldwideWins": 22,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Robert_Allenby"
+      ]
+    },
+    {
+      "id": "steve-pate",
+      "name": "Steve Pate",
+      "aliases": [
+        "Stephen Robert Pate",
+        "Volcano",
+        "Pate"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1961-05-26",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 6,
+      "worldwideWins": 8,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Steve_Pate"
+      ]
+    },
+    {
+      "id": "chris-dimarco",
+      "name": "Chris DiMarco",
+      "aliases": [
+        "DiMarco",
+        "Christian DiMarco"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1968-08-23",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 8,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chris_DiMarco"
+      ]
+    },
+    {
+      "id": "scott-verplank",
+      "name": "Scott Verplank",
+      "aliases": [
+        "Verplank"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1964-07-09",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 5,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Scott_Verplank"
+      ]
+    },
+    {
+      "id": "joe-durant",
+      "name": "Joe Durant",
+      "aliases": [
+        "Durant"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1964-04-07",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 4,
+      "worldwideWins": 13,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Joe_Durant"
+      ]
+    },
+    {
+      "id": "wayne-levi",
+      "name": "Wayne Levi",
+      "aliases": [
+        "Levi"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1952-02-22",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 12,
+      "worldwideWins": 20,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wayne_Levi"
+      ]
+    },
+    {
+      "id": "dan-pohl",
+      "name": "Dan Pohl",
+      "aliases": [
+        "Danny Pohl"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1955-04-01",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 2,
+      "worldwideWins": 3,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dan_Pohl"
+      ]
+    },
+    {
+      "id": "mike-reid",
+      "name": "Mike Reid",
+      "aliases": [
+        "Radar",
+        "Michael Reid"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1954-07-01",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 2,
+      "worldwideWins": 8,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mike_Reid_(golfer)"
+      ]
+    },
+    {
+      "id": "calvin-peete",
+      "name": "Calvin Peete",
+      "aliases": [
+        "Peete"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1943-07-18",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 12,
+      "worldwideWins": 14,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Calvin_Peete"
+      ]
+    },
+    {
+      "id": "isao-aoki",
+      "name": "Isao Aoki",
+      "aliases": [
+        "Aoki"
+      ],
+      "tour": "Japan",
+      "country": "Japan",
+      "born": "1942-08-31",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 80,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Isao_Aoki"
+      ]
+    },
+    {
+      "id": "jumbo-ozaki",
+      "name": "Masashi Ozaki",
+      "aliases": [
+        "Jumbo Ozaki",
+        "Jumbo"
+      ],
+      "tour": "Japan",
+      "country": "Japan",
+      "born": "1947-01-24",
+      "heightCm": 181,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 114,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jumbo_Ozaki"
+      ]
+    },
+    {
+      "id": "gil-morgan",
+      "name": "Gil Morgan",
+      "aliases": [
+        "Morgan"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1946-09-25",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 7,
+      "worldwideWins": 41,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gil_Morgan"
+      ]
+    },
+    {
+      "id": "bob-gilder",
+      "name": "Bob Gilder",
+      "aliases": [
+        "Gilder"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1950-12-31",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 6,
+      "worldwideWins": 24,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bob_Gilder"
+      ]
+    },
+    {
+      "id": "andy-bean",
+      "name": "Andy Bean",
+      "aliases": [
+        "Bean"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1953-03-13",
+      "heightCm": 193,
+      "majors": 0,
+      "pgaTourWins": 11,
+      "worldwideWins": 18,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Andy_Bean_(golfer)"
+      ]
+    },
+    {
+      "id": "mark-mccumber",
+      "name": "Mark McCumber",
+      "aliases": [
+        "McCumber"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1951-09-07",
+      "heightCm": 173,
+      "majors": 0,
+      "pgaTourWins": 10,
+      "worldwideWins": 11,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mark_McCumber"
+      ]
+    },
+    {
+      "id": "ken-green",
+      "name": "Ken Green",
+      "aliases": [
+        "Green"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1958-07-23",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 5,
+      "worldwideWins": 11,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ken_Green_(golfer)"
+      ]
+    },
+    {
+      "id": "bill-glasson",
+      "name": "Bill Glasson",
+      "aliases": [
+        "Glasson"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1960-04-29",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 7,
+      "worldwideWins": 9,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bill_Glasson_(golfer)"
+      ]
+    },
+    {
+      "id": "blaine-mccallister",
+      "name": "Blaine McCallister",
+      "aliases": [
+        "McCallister"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1958-10-17",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 5,
+      "worldwideWins": 8,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Blaine_McCallister"
+      ]
+    },
+    {
+      "id": "jodie-mudd",
+      "name": "Jodie Mudd",
+      "aliases": [
+        "Joseph Martin Mudd",
+        "Mudd"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1960-04-23",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 4,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jodie_Mudd"
+      ]
+    },
+    {
+      "id": "rocco-mediate",
+      "name": "Rocco Mediate",
+      "aliases": [
+        "Rocco Anthony Mediate",
+        "Rocco"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1962-12-17",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 6,
+      "worldwideWins": 14,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rocco_Mediate"
+      ]
+    },
+    {
+      "id": "jeff-maggert",
+      "name": "Jeff Maggert",
+      "aliases": [
+        "Jeffrey Allan Maggert",
+        "Maggert"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1964-02-20",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 19,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jeff_Maggert"
+      ]
+    },
+    {
+      "id": "kirk-triplett",
+      "name": "Kirk Triplett",
+      "aliases": [
+        "Kirk Alan Triplett",
+        "Triplett"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1962-03-29",
+      "heightCm": 191,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 17,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kirk_Triplett"
+      ]
+    },
+    {
+      "id": "bob-estes",
+      "name": "Bob Estes",
+      "aliases": [
+        "Bob Alan Estes",
+        "Estes"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1966-02-02",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 4,
+      "worldwideWins": null,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bob_Estes"
+      ]
+    },
+    {
+      "id": "frank-nobilo",
+      "name": "Frank Nobilo",
+      "aliases": [
+        "Frank Ivan Joseph Nobilo",
+        "Nobilo"
+      ],
+      "tour": "European",
+      "country": "New Zealand",
+      "born": "1960-05-14",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 14,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Frank_Nobilo"
+      ]
+    },
+    {
+      "id": "notah-begay-iii",
+      "name": "Notah Begay III",
+      "aliases": [
+        "Notah Begay",
+        "Notah Ryan Begay III"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1972-09-14",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 4,
+      "worldwideWins": 5,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Notah_Begay_III"
+      ]
+    },
+    {
+      "id": "grant-waite",
+      "name": "Grant Waite",
+      "aliases": [
+        "Grant Osten Waite",
+        "Waite"
+      ],
+      "tour": null,
+      "country": "New Zealand",
+      "born": "1964-08-11",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 4,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Grant_Waite"
+      ]
+    },
+    {
+      "id": "glen-day",
+      "name": "Glen Day",
+      "aliases": [
+        "Glen Edward Day"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1965-11-16",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 2,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Glen_Day"
+      ]
+    },
+    {
+      "id": "tim-herron",
+      "name": "Tim Herron",
+      "aliases": [
+        "Timothy Daniel Herron",
+        "Lumpy"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1970-02-06",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 4,
+      "worldwideWins": null,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tim_Herron"
+      ]
+    },
+    {
+      "id": "stuart-appleby",
+      "name": "Stuart Appleby",
+      "aliases": [
+        "Appleby"
+      ],
+      "tour": "PGA",
+      "country": "Australia",
+      "born": "1971-05-01",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 9,
+      "worldwideWins": 20,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Stuart_Appleby"
+      ]
+    },
+    {
+      "id": "dudley-hart",
+      "name": "Dudley Hart",
+      "aliases": [
+        "Howard Dudley Hart"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1968-08-04",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 2,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dudley_Hart"
+      ]
+    },
+    {
+      "id": "brandt-jobe",
+      "name": "Brandt Jobe",
+      "aliases": [
+        "Brandt William Jobe"
+      ],
+      "tour": "Japan",
+      "country": "United States",
+      "born": "1965-08-01",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 16,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Brandt_Jobe"
+      ]
+    },
+    {
+      "id": "paul-stankowski",
+      "name": "Paul Stankowski",
+      "aliases": [
+        "Paul Francis Stankowski"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1969-12-02",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 2,
+      "worldwideWins": 8,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Paul_Stankowski"
+      ]
+    },
+    {
+      "id": "woody-austin",
+      "name": "Woody Austin",
+      "aliases": [
+        "Albert Woody Austin II"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1964-01-27",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 4,
+      "worldwideWins": 11,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Woody_Austin"
+      ]
+    },
+    {
+      "id": "skip-kendall",
+      "name": "Skip Kendall",
+      "aliases": [
+        "Jules Ira Kendall"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1964-09-09",
+      "heightCm": 173,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Skip_Kendall"
+      ]
+    },
+    {
+      "id": "jp-hayes",
+      "name": "J.P. Hayes",
+      "aliases": [
+        "John Patrick Hayes",
+        "JP Hayes"
+      ],
+      "tour": "PGA",
+      "country": "United States",
+      "born": "1965-08-02",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 2,
+      "worldwideWins": 3,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/J.P._Hayes"
+      ]
+    },
+    {
+      "id": "shigeki-maruyama",
+      "name": "Shigeki Maruyama",
+      "aliases": [
+        "Smiling Assassin"
+      ],
+      "tour": "Japan",
+      "country": "Japan",
+      "born": "1969-09-12",
+      "heightCm": 169,
+      "majors": 0,
+      "pgaTourWins": 3,
+      "worldwideWins": 14,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shigeki_Maruyama"
+      ]
+    },
+    {
+      "id": "carlos-franco",
+      "name": "Carlos Franco",
+      "aliases": [
+        "Carlos Daniel Franco"
+      ],
+      "tour": "Japan",
+      "country": "Paraguay",
+      "born": "1965-05-24",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 4,
+      "worldwideWins": 25,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Carlos_Franco"
+      ]
+    },
+    {
+      "id": "jean-van-de-velde",
+      "name": "Jean van de Velde",
+      "aliases": [
+        "Jean Van de Velde"
+      ],
+      "tour": "European",
+      "country": "France",
+      "born": "1966-05-29",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 7,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jean_van_de_Velde_(golfer)"
+      ]
+    },
+    {
+      "id": "ronan-rafferty",
+      "name": "Ronan Rafferty",
+      "aliases": [
+        "Ronan Patrick Rafferty"
+      ],
+      "tour": "European",
+      "country": "Northern Ireland",
+      "born": "1964-01-13",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 14,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ronan_Rafferty"
+      ]
+    },
+    {
+      "id": "mark-roe",
+      "name": "Mark Roe",
+      "aliases": [
+        "Mark Adrian Roe"
+      ],
+      "tour": "European",
+      "country": "England",
+      "born": "1963-02-20",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 3,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mark_Roe"
+      ]
+    },
+    {
+      "id": "barry-lane",
+      "name": "Barry Lane",
+      "aliases": [
+        "Barry Douglas Lane"
+      ],
+      "tour": "European",
+      "country": "England",
+      "born": "1960-06-21",
+      "heightCm": 178,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 20,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Barry_Lane"
+      ]
+    },
+    {
+      "id": "peter-baker",
+      "name": "Peter Baker",
+      "aliases": [
+        "Peter Alan Baker"
+      ],
+      "tour": "European",
+      "country": "England",
+      "born": "1967-10-07",
+      "heightCm": 175,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 18,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Peter_Baker_(golfer)"
+      ]
+    },
+    {
+      "id": "david-gilford",
+      "name": "David Gilford",
+      "aliases": [],
+      "tour": "European",
+      "country": "England",
+      "born": "1965-09-14",
+      "heightCm": 180,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 6,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/David_Gilford"
+      ]
+    },
+    {
+      "id": "howard-clark",
+      "name": "Howard Clark",
+      "aliases": [
+        "Howard Keith Clark"
+      ],
+      "tour": "European",
+      "country": "England",
+      "born": "1954-08-26",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 14,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Howard_Clark_(golfer)"
+      ]
+    },
+    {
+      "id": "ken-brown",
+      "name": "Ken Brown",
+      "aliases": [
+        "Kenneth John Brown"
+      ],
+      "tour": "European",
+      "country": "Scotland",
+      "born": "1957-01-09",
+      "heightCm": 185,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": 9,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ken_Brown_(golfer)"
+      ]
+    },
+    {
+      "id": "mark-james",
+      "name": "Mark James",
+      "aliases": [
+        "Mark Hugh James"
+      ],
+      "tour": "European",
+      "country": "England",
+      "born": "1953-10-28",
+      "heightCm": 183,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 32,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mark_James_(golfer)"
+      ]
+    },
+    {
+      "id": "russell-claydon",
+      "name": "Russell Claydon",
+      "aliases": [],
+      "tour": "European",
+      "country": "England",
+      "born": "1965-11-19",
+      "heightCm": 188,
+      "majors": 0,
+      "pgaTourWins": 0,
+      "worldwideWins": 2,
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Russell_Claydon"
+      ]
+    }
+  ]
+}
