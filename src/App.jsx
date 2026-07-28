@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import SilhouetteReveal from './components/SilhouetteReveal.jsx'
 import GuessInput from './components/GuessInput.jsx'
-import GuessHistory from './components/GuessHistory.jsx'
+import GuessGrid from './components/GuessGrid.jsx'
 import ResultModal from './components/ResultModal.jsx'
 import StatsModal from './components/StatsModal.jsx'
 import HelpModal from './components/HelpModal.jsx'
@@ -133,7 +133,7 @@ export default function App() {
       <main className="mx-auto flex w-full max-w-lg flex-1 flex-col gap-5 px-4 py-5">
         <SilhouetteReveal player={puzzle.player} stage={stage} revealed={finished} />
 
-        <GuessHistory guesses={guesses} answerId={puzzle.player.id} status={status} />
+        <GuessGrid guesses={guesses} answerId={puzzle.player.id} status={status} />
 
         {finished ? (
           <button
