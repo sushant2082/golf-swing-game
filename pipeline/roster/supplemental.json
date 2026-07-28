@@ -1,0 +1,21 @@
+{
+  "slice": "supplemental",
+  "generatedNote": "Hand-added after the automated slices silently dropped them. Each field verified individually against the cited source.",
+  "incomplete": true,
+  "players": [
+    {
+      "id": "tommy-fleetwood",
+      "name": "Tommy Fleetwood",
+      "aliases": ["Fleetwood", "Tommy", "Fleetwood Mac"],
+      "tour": "European",
+      "country": "England",
+      "born": "1991-01-19",
+      "heightCm": null,
+      "majors": 0,
+      "pgaTourWins": 1,
+      "worldwideWins": null,
+      "confidence": "high",
+      "sources": ["https://en.wikipedia.org/wiki/Tommy_Fleetwood"]
+    }
+  ]
+}
