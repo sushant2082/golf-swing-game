@@ -149,7 +149,7 @@ export default function App() {
       </main>
 
       <footer className="px-4 pb-6 text-center text-[11px] text-stone-400 dark:text-stone-600">
-        A new swing every day at midnight. Silhouettes are original illustrations.
+        A new swing every day at midnight.
       </footer>
 
       {/* Screen-reader narration for guess outcomes, which are otherwise purely visual. */}

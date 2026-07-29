@@ -8,7 +8,7 @@
  * after every other player has appeared.
  */
 
-import { PLAYERS } from '../data/players.js'
+import { PUZZLE_POOL } from '../data/players.js'
 
 /** Day 0 of the game. Local time, not UTC — the puzzle rolls over at midnight. */
 export const EPOCH = new Date(2026, 0, 1)
@@ -64,11 +64,17 @@ export function dateKey(date = new Date()) {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`
 }
 
-/** The roster order for a given cycle, avoiding a repeat across the seam. */
+/**
+ * The order for a given cycle, avoiding a repeat across the seam.
+ *
+ * Cycles over PUZZLE_POOL — the players with swing footage — not the full
+ * guessable roster. Every golfer is guessable; only those with a clip can be
+ * the answer.
+ */
 function cycleOrder(cycle) {
-  const order = shuffled(PLAYERS, cycle * 2654435761 + 12345)
+  const order = shuffled(PUZZLE_POOL, cycle * 2654435761 + 12345)
   if (cycle > 0) {
-    const previous = shuffled(PLAYERS, (cycle - 1) * 2654435761 + 12345)
+    const previous = shuffled(PUZZLE_POOL, (cycle - 1) * 2654435761 + 12345)
     const lastId = previous[previous.length - 1].id
     if (order[0].id === lastId && order.length > 1) {
       ;[order[0], order[1]] = [order[1], order[0]]
@@ -83,7 +89,7 @@ function cycleOrder(cycle) {
  */
 export function getPuzzle(date = new Date()) {
   const index = Math.max(0, dayIndexFor(date))
-  const n = PLAYERS.length
+  const n = PUZZLE_POOL.length
   const order = cycleOrder(Math.floor(index / n))
   return {
     number: index + 1,

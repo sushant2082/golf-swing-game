@@ -6,9 +6,13 @@ const STATE_STYLES = {
   hit: 'bg-emerald-600 text-white border-emerald-600',
   near: 'bg-amber-400 text-stone-900 border-amber-400',
   miss: 'bg-stone-100 text-stone-500 border-stone-200 dark:bg-stone-800 dark:text-stone-400 dark:border-stone-700',
+  // Researchers could not verify this value for one of the two players, so it
+  // is shown as explicitly unknown rather than being scored as a miss.
+  unknown:
+    'bg-transparent text-stone-400 border-dashed border-stone-300 dark:text-stone-600 dark:border-stone-700',
 }
 
-const STATE_LABEL = { hit: 'exact match', near: 'close', miss: 'no match' }
+const STATE_LABEL = { hit: 'exact match', near: 'close', miss: 'no match', unknown: 'unknown' }
 const ARROW = { up: '↑', down: '↓' }
 
 /**

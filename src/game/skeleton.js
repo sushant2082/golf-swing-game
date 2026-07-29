@@ -45,7 +45,7 @@ function ik(shoulder, target, l1, l2, sign) {
 }
 
 /** Cheap stable hash so each player gets repeatable micro-variation. */
-function hashString(str) {
+export function hashString(str) {
   let h = 2166136261
   for (let i = 0; i < str.length; i++) {
     h ^= str.charCodeAt(i)

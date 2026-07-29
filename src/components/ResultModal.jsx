@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import Modal from './Modal.jsx'
 import GolferSilhouette from './GolferSilhouette.jsx'
-import { POSES } from '../game/skeleton.js'
 import CountdownTimer from './CountdownTimer.jsx'
 import { buildShareText, copyToClipboard } from '../game/share.js'
 import { MAX_GUESSES } from '../game/puzzle.js'
+import { ageOf, formatValue } from '../game/compare.js'
 
 const WIN_HEADLINES = [
   'Flushed it.',
@@ -26,6 +26,7 @@ export default function ResultModal({
 }) {
   const [copied, setCopied] = useState(false)
   const won = status === 'won'
+  const age = ageOf(player)
 
   const share = async () => {
     const text = buildShareText({ puzzleNumber, guesses, status })
@@ -57,14 +58,29 @@ export default function ResultModal({
       <div className="mb-4 rounded-xl bg-stone-50 p-4 dark:bg-stone-800/60">
         <h3 className="text-lg font-bold text-stone-900 dark:text-stone-50">{player.name}</h3>
         <p className="mt-0.5 text-sm text-stone-500 dark:text-stone-400">
-          {player.country} · {player.tour} · {player.years}
+          {[player.country, player.tour, age ? `age ${age}` : null].filter(Boolean).join(' · ')}
         </p>
-        <p className="mt-1 text-xs text-stone-400 dark:text-stone-500">
-          Shown at {POSES[player.silhouette.pose]?.label ?? 'the top of the backswing'}
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
-          {player.fact}
-        </p>
+
+        <dl className="mt-3 grid grid-cols-3 gap-2 text-center">
+          {[
+            ['Majors', player.majors],
+            ['PGA wins', player.pgaTourWins],
+            ['Height', player.heightCm ? formatValue('heightCm', player.heightCm) : null],
+          ].map(([label, value]) => (
+            <div key={label} className="rounded-lg bg-white/60 py-2 dark:bg-stone-900/60">
+              <dt className="text-[10px] uppercase tracking-wide text-stone-400">{label}</dt>
+              <dd className="text-base font-bold tabular-nums text-stone-900 dark:text-stone-100">
+                {value ?? '—'}
+              </dd>
+            </div>
+          ))}
+        </dl>
+
+        {player.fact && (
+          <p className="mt-3 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
+            {player.fact}
+          </p>
+        )}
       </div>
 
       <div className="mb-5 border-y border-stone-200 py-4 dark:border-stone-800">

@@ -6,7 +6,7 @@
  * so the reveal stages can recolour groups independently without re-laying out.
  */
 
-import { buildSkeleton, VIEW_W, VIEW_H, VIEW_TOP, GROUND_Y } from '../game/skeleton.js'
+import { buildSkeleton, hashString, VIEW_W, VIEW_H, VIEW_TOP, GROUND_Y } from '../game/skeleton.js'
 
 // --- reveal stages ----------------------------------------------------------
 
@@ -33,13 +33,50 @@ const SILHOUETTE_INK = 'currentColor'
 
 // --- component --------------------------------------------------------------
 
+const POSE_KEYS = ['takeaway', 'top', 'impact', 'finish']
+const HATS = ['cap', 'visor', 'flatcap', null]
+const HAIR = ['short', 'short', 'long', 'curly']
+
+/**
+ * Placeholder appearance for a player with no authored silhouette.
+ *
+ * The researched roster carries no art parameters, so these are derived from
+ * the player's id and height — deterministic, so a given golfer always looks
+ * the same, and varied enough that the roster doesn't render as 333 identical
+ * figures. This is scaffolding: real swing footage replaces it per player.
+ */
+function deriveSilhouette(player) {
+  const h = hashString(player.id)
+  const pick = (list, salt) => list[Math.floor(hashString(player.id + salt) * list.length) % list.length]
+
+  // 175cm sits mid-range for tour players; map roughly 163-198cm onto the scale.
+  const heightScale = player.heightCm ? 0.88 + (player.heightCm - 163) / 175 : 1
+
+  return {
+    hand: 'R',
+    pose: pick(POSE_KEYS, 'pose'),
+    build: hashString(player.id + 'build'),
+    height: Math.max(0.86, Math.min(1.1, heightScale)),
+    hat: pick(HATS, 'hat'),
+    hair: pick(HAIR, 'hair'),
+    colors: {
+      shirt: `hsl(${Math.floor(h * 360)} 55% 45%)`,
+      trousers: '#2b2f38',
+      hat: `hsl(${Math.floor(h * 360)} 55% 45%)`,
+      shoes: '#f2f2f2',
+      skin: '#c98f63',
+      club: '#8a8f98',
+    },
+  }
+}
+
 export default function GolferSilhouette({
   player,
   stage = 1,
   className = '',
   showGround = true,
 }) {
-  const spec = player.silhouette
+  const spec = player.silhouette ?? deriveSilhouette(player)
   const s = buildSkeleton(spec, player.id)
   const lit = new Set(STAGE_PARTS[Math.min(4, Math.max(1, stage))] ?? [])
   const colors = spec.colors ?? {}
