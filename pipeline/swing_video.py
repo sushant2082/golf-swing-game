@@ -45,10 +45,14 @@ VIDEO_SUFFIXES = {".mp4", ".mov", ".m4v", ".webm", ".avi"}
 # Output geometry. Height is fixed so every golfer is framed identically —
 # relative size is a clue about the player, and an inconsistent crop turns the
 # puzzle into a test of how the clip happened to be shot.
-OUT_HEIGHT = 520
-OUT_WIDTH = 400
+OUT_HEIGHT = 660
+OUT_WIDTH = 508
 FPS = 20
-DEFAULT_DURATION = 2.4
+# Clips arrive already trimmed to a single swing, so use the whole thing rather
+# than truncating it — a clip cut short loses the finish, which is often the
+# most recognisable part of a swing. Capped so an untrimmed upload can't
+# balloon the frame count.
+MAX_DURATION = 4.5
 
 # Halftone settings per reveal stage: coarse dots hide the swing's finer detail,
 # fine dots show wrist and club positions clearly.
@@ -64,6 +68,24 @@ DOT_COLORS = [(86, 180, 233), (120, 200, 140), (232, 205, 90)]
 BACKGROUND = (0, 0, 0)
 
 MASK_THRESHOLD = 100
+
+# How far a pixel must differ from the static background plate to count as
+# moving. Low enough to catch a pale club against grass, high enough to ignore
+# sensor noise and compression wobble.
+MOTION_THRESHOLD = 34
+
+# Excess Green (2G - R - B) above this counts as grass or foliage and is
+# refused entry to the mask. Golf is played on green, so without this the
+# background moves more than the subject does.
+VEGETATION_EXG = 18
+
+# How far motion may sit from the body and still be considered part of the
+# swing, as a fraction of the golfer's height in frame.
+CLUB_REACH = 0.55
+
+# Largest a motion blob may be, relative to the body, and still be treated as
+# equipment rather than background.
+MAX_CLUB_AREA = 0.06
 
 
 def run(cmd: list[str]) -> subprocess.CompletedProcess:
@@ -120,6 +142,75 @@ def segment(frames: list[Path], session) -> list[np.ndarray]:
         print(f"    frame {i}/{len(frames)}", end="\r", flush=True)
     print(" " * 30, end="\r")
     return masks
+
+
+def recover_club(frames: list[Path], masks: list[np.ndarray], threshold: int = None) -> list[np.ndarray]:
+    """
+    Add the club back into the mask using motion.
+
+    U^2-Net segments *people*, so a thin, motion-blurred, semi-transparent club
+    shaft is reliably dropped — which for a golf silhouette loses half the
+    visual signature. The camera is locked off, so anything that differs from
+    the static background is the golfer or their club.
+
+    Taking the per-pixel median across all frames gives a clean plate of the
+    background (the golfer is only over any given pixel briefly). Pixels that
+    differ from it are moving. Those are then filtered by connectivity: only
+    motion blobs touching the body survive, so the club comes in via the hands
+    while wind in the trees and a shifting gallery do not.
+    """
+    from scipy import ndimage
+
+    size = (masks[0].shape[1], masks[0].shape[0])
+    rgb = np.stack([
+        np.asarray(Image.open(f).convert("RGB").resize(size, Image.BILINEAR), dtype=np.int16)
+        for f in frames
+    ])
+    grays = rgb.mean(axis=3).astype(np.int16)
+    background = np.median(grays, axis=0)
+
+    # Excess Green Index — the standard vegetation discriminator. Grass and
+    # foliage score high; skin, kit and a metal shaft do not. Wind moving a tree
+    # produces exactly the same brightness delta as a moving club, so no
+    # brightness threshold can separate them: colour is the only signal that can.
+    exg = 2 * rgb[:, :, :, 1] - rgb[:, :, :, 0] - rgb[:, :, :, 2]
+
+    out = []
+    for gray, vegetation, mask in zip(grays, exg > VEGETATION_EXG, masks):
+        body = mask >= MASK_THRESHOLD
+        # Vegetation is only ever excluded from *added* motion pixels, never
+        # from the segmented body — so a golfer in a green shirt is unaffected.
+        motion = (np.abs(gray - background) > (threshold or MOTION_THRESHOLD)) & ~vegetation
+
+        if not body.any():
+            out.append(np.where(body, 255, 0).astype(np.uint8))
+            continue
+
+        # A club stays within roughly half a body-height of its owner.
+        rows = np.where(body.any(axis=1))[0]
+        reach = max(30, int((rows[-1] - rows[0]) * CLUB_REACH))
+        motion = motion & (ndimage.distance_transform_edt(~body) <= reach)
+
+        # Keep motion blobs that touch the body, but only if they are small
+        # relative to it. This is what separates a club from a crowd: a shaft
+        # is a sliver, whereas a grandstand full of spectators is bulky and
+        # merely happens to touch the golfer's outline. Brightness, colour and
+        # distance all fail here — the gallery is pale, not green, and sits
+        # directly behind the player's head.
+        touching = ndimage.binary_dilation(body, iterations=3)
+        labels, count = ndimage.label(motion)
+        merged = body.copy()
+        if count:
+            body_area = int(body.sum())
+            for index, area in enumerate(ndimage.sum(motion, labels, range(1, count + 1)), start=1):
+                if area > body_area * MAX_CLUB_AREA:
+                    continue
+                blob = labels == index
+                if (blob & touching).any():
+                    merged |= blob
+
+        out.append(np.where(merged, 255, 0).astype(np.uint8))
+    return out
 
 
 def smooth_over_time(masks: list[np.ndarray], window: int = 3) -> list[np.ndarray]:
@@ -223,16 +314,26 @@ def encode(frames: Path, out: Path, fps: int = FPS) -> None:
     )
 
 
-def copy_reveal(clip: Path, out: Path, start: float, duration: float, flip: bool) -> None:
-    """Stage 4: the source footage, trimmed and normalised to the same box."""
+def copy_reveal(clip: Path, out: Path, start: float, duration: float, flip: bool,
+                box: tuple[int, int, int, int] | None = None) -> None:
+    """
+    Stage 4: the source footage, framed exactly like the silhouette.
+
+    Reusing the silhouette's crop box matters — showing the full original frame
+    reads as a different shot, and the reveal lands best when it is visibly the
+    same image with the mask lifted.
+    """
     out.parent.mkdir(parents=True, exist_ok=True)
-    filters = [
-        f"fps={FPS}",
+    filters = [f"fps={FPS}", f"scale=-2:{OUT_HEIGHT * 2}"]
+    if box:
+        x0, y0, x1, y1 = box
+        filters.append(f"crop={x1 - x0}:{y1 - y0}:{x0}:{y0}")
+    filters += [
         f"scale={OUT_WIDTH}:{OUT_HEIGHT}:force_original_aspect_ratio=decrease",
         f"pad={OUT_WIDTH}:{OUT_HEIGHT}:(ow-iw)/2:(oh-ih)/2:black",
     ]
     if flip:
-        filters.insert(0, "hflip")
+        filters.insert(1, "hflip")
     run(
         [
             "ffmpeg", "-v", "error", "-y",
@@ -246,13 +347,13 @@ def copy_reveal(clip: Path, out: Path, start: float, duration: float, flip: bool
     )
 
 
-def process(clip: Path, out_root: Path, opts: dict, work: Path, session) -> dict:
+def process(clip: Path, out_root: Path, opts: dict, work: Path, session, motion: int = None) -> dict:
     player_id = clip.stem
     print(f"→ {player_id}")
 
     total = probe_duration(clip)
     start = float(opts.get("start", 0.0))
-    duration = float(opts.get("duration", min(DEFAULT_DURATION, max(0.5, total - start))))
+    duration = float(opts.get("duration", min(MAX_DURATION, max(0.5, total - start))))
     flip = bool(opts.get("flip", False))
 
     raw = work / player_id / "raw"
@@ -261,7 +362,7 @@ def process(clip: Path, out_root: Path, opts: dict, work: Path, session) -> dict
         raise RuntimeError(f"no frames extracted from {clip.name}")
     print(f"  · {len(frames)} frames @ {FPS}fps ({duration:.1f}s from {start:.1f}s)")
 
-    masks = smooth_over_time(segment(frames, session))
+    masks = smooth_over_time(recover_club(frames, segment(frames, session), motion))
     coverage = float(np.mean([(m >= MASK_THRESHOLD).mean() for m in masks]))
     print(f"  · mask coverage {coverage:.1%}")
     if coverage < 0.01:
@@ -276,7 +377,7 @@ def process(clip: Path, out_root: Path, opts: dict, work: Path, session) -> dict
         encode(staged, out_dir / f"{stage}.mp4")
         print(f"  · stage {stage} → {out_dir / f'{stage}.mp4'}")
 
-    copy_reveal(clip, out_dir / "4.mp4", start, duration, flip)
+    copy_reveal(clip, out_dir / "4.mp4", start, duration, flip, box)
     print(f"  · stage 4 → {out_dir / '4.mp4'}")
 
     # Poster from the coarsest stage, so nothing is given away before playback.
@@ -298,6 +399,13 @@ def main() -> int:
     parser.add_argument("--work", type=Path, default=here / ".work")
     parser.add_argument("--only", help="process a single player id")
     parser.add_argument("--keep-work", action="store_true", help="keep intermediate frames")
+    parser.add_argument(
+        "--motion",
+        type=int,
+        default=None,
+        help=f"motion threshold for club recovery (default {MOTION_THRESHOLD}); "
+             "raise it if camera shake is pulling the horizon into the mask",
+    )
     args = parser.parse_args()
 
     for tool in ("ffmpeg", "ffprobe"):
@@ -328,7 +436,7 @@ def main() -> int:
     manifest = {}
     for clip in clips:
         try:
-            manifest[clip.stem] = process(clip, args.out, overrides.get(clip.stem, {}), args.work, session)
+            manifest[clip.stem] = process(clip, args.out, overrides.get(clip.stem, {}), args.work, session, args.motion)
         except Exception as exc:  # keep going; one bad clip shouldn't stop the batch
             print(f"  ! failed: {exc}", file=sys.stderr)
 

@@ -1,0 +1,79 @@
+{
+  "_smoketest": {
+    "1": "/swings/_smoketest/1.mp4",
+    "2": "/swings/_smoketest/2.mp4",
+    "3": "/swings/_smoketest/3.mp4",
+    "4": "/swings/_smoketest/4.mp4",
+    "poster": "/swings/_smoketest/poster.jpg"
+  },
+  "bryson-dechambeau": {
+    "1": "/swings/bryson-dechambeau/1.mp4",
+    "2": "/swings/bryson-dechambeau/2.mp4",
+    "3": "/swings/bryson-dechambeau/3.mp4",
+    "4": "/swings/bryson-dechambeau/4.mp4",
+    "poster": "/swings/bryson-dechambeau/poster.jpg"
+  },
+  "akshay-bhatia": {
+    "1": "/swings/akshay-bhatia/1.mp4",
+    "2": "/swings/akshay-bhatia/2.mp4",
+    "3": "/swings/akshay-bhatia/3.mp4",
+    "4": "/swings/akshay-bhatia/4.mp4",
+    "poster": "/swings/akshay-bhatia/poster.jpg"
+  },
+  "cameron-young": {
+    "1": "/swings/cameron-young/1.mp4",
+    "2": "/swings/cameron-young/2.mp4",
+    "3": "/swings/cameron-young/3.mp4",
+    "4": "/swings/cameron-young/4.mp4",
+    "poster": "/swings/cameron-young/poster.jpg"
+  },
+  "jon-rahm": {
+    "1": "/swings/jon-rahm/1.mp4",
+    "2": "/swings/jon-rahm/2.mp4",
+    "3": "/swings/jon-rahm/3.mp4",
+    "4": "/swings/jon-rahm/4.mp4",
+    "poster": "/swings/jon-rahm/poster.jpg"
+  },
+  "ludvig-aberg": {
+    "1": "/swings/ludvig-aberg/1.mp4",
+    "2": "/swings/ludvig-aberg/2.mp4",
+    "3": "/swings/ludvig-aberg/3.mp4",
+    "4": "/swings/ludvig-aberg/4.mp4",
+    "poster": "/swings/ludvig-aberg/poster.jpg"
+  },
+  "phil-mickelson": {
+    "1": "/swings/phil-mickelson/1.mp4",
+    "2": "/swings/phil-mickelson/2.mp4",
+    "3": "/swings/phil-mickelson/3.mp4",
+    "4": "/swings/phil-mickelson/4.mp4",
+    "poster": "/swings/phil-mickelson/poster.jpg"
+  },
+  "rory-mcilroy": {
+    "1": "/swings/rory-mcilroy/1.mp4",
+    "2": "/swings/rory-mcilroy/2.mp4",
+    "3": "/swings/rory-mcilroy/3.mp4",
+    "4": "/swings/rory-mcilroy/4.mp4",
+    "poster": "/swings/rory-mcilroy/poster.jpg"
+  },
+  "sam-burns": {
+    "1": "/swings/sam-burns/1.mp4",
+    "2": "/swings/sam-burns/2.mp4",
+    "3": "/swings/sam-burns/3.mp4",
+    "4": "/swings/sam-burns/4.mp4",
+    "poster": "/swings/sam-burns/poster.jpg"
+  },
+  "scottie-scheffler": {
+    "1": "/swings/scottie-scheffler/1.mp4",
+    "2": "/swings/scottie-scheffler/2.mp4",
+    "3": "/swings/scottie-scheffler/3.mp4",
+    "4": "/swings/scottie-scheffler/4.mp4",
+    "poster": "/swings/scottie-scheffler/poster.jpg"
+  },
+  "tiger-woods": {
+    "1": "/swings/tiger-woods/1.mp4",
+    "2": "/swings/tiger-woods/2.mp4",
+    "3": "/swings/tiger-woods/3.mp4",
+    "4": "/swings/tiger-woods/4.mp4",
+    "poster": "/swings/tiger-woods/poster.jpg"
+  }
+}

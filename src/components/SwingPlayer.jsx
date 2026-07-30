@@ -15,12 +15,25 @@ export default function SwingPlayer({ swing, stage, revealed, playerName }) {
 
   // Autoplay is refused often enough (low power mode, data saver, reduced
   // motion) that it needs an explicit fallback rather than a silent black box.
+  //
+  // The play() promise can also reject simply because the source changed
+  // mid-load, which is not a real refusal — so the overlay is only shown if the
+  // element is still paused once the browser has had a chance to start.
   useEffect(() => {
     setFailed(false)
     const el = videoRef.current
     if (!el) return
+
+    let cancelled = false
     const attempt = el.play()
-    if (attempt?.catch) attempt.catch(() => setFailed(true))
+    if (attempt?.catch) {
+      attempt.catch(() => {
+        if (!cancelled && el.paused) setFailed(true)
+      })
+    }
+    return () => {
+      cancelled = true
+    }
   }, [src])
 
   if (!src) return null
@@ -37,6 +50,7 @@ export default function SwingPlayer({ swing, stage, revealed, playerName }) {
         muted
         playsInline
         preload="auto"
+        onPlaying={() => setFailed(false)}
         aria-label={
           revealed
             ? `Video of ${playerName} swinging`

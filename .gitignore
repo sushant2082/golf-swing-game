@@ -70,9 +70,11 @@ pipeline/sources/
 pipeline/.venv/
 
 # --- swing video pipeline ---
+# Source clips stay local (large, and licensing sits with whoever supplied
+# them). Processed output in public/swings/ IS committed - it is the deployed
+# asset. pipeline/swings.json is committed too, since the app imports it.
 pipeline/.venv/
 pipeline/.work/
 pipeline/clips/
 demo.mov
 public/swings/_smoketest/
-pipeline/swings.json

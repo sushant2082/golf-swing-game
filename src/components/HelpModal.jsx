@@ -5,14 +5,16 @@ import { COLUMNS } from '../game/compare.js'
 
 const KEY = [
   ['hit', 'Exact match'],
-  ['near', 'Close — same continent, within a decade, or within two majors'],
+  ['near', 'Close — same continent, within 5 years or 2 inches, or within two majors or wins'],
   ['miss', 'No match'],
+  ['unknown', 'Not known for one of the two players'],
 ]
 
 const SWATCH = {
   hit: 'bg-emerald-600',
   near: 'bg-amber-400',
   miss: 'bg-stone-200 dark:bg-stone-700',
+  unknown: 'border border-dashed border-stone-300 dark:border-stone-600',
 }
 
 export default function HelpModal({ open, onClose }) {
@@ -41,15 +43,14 @@ export default function HelpModal({ open, onClose }) {
       </ul>
 
       <p className="mt-3 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
-        Debut and majors also show an arrow — <strong>↑</strong> means the answer is higher than
-        your guess, <strong>↓</strong> means lower.
+        Age, height, majors and wins also show an arrow — <strong>↑</strong> means the answer is
+        higher than your guess, <strong>↓</strong> means lower.
       </p>
 
       <div className="mt-5 rounded-xl bg-stone-50 p-4 text-sm text-stone-600 dark:bg-stone-800/60 dark:text-stone-400">
         <p>
-          The roster covers <strong>{PLAYERS.length} golfers</strong> across the PGA Tour, the LPGA
-          and the legends of the game. Nicknames work — try &ldquo;Lefty&rdquo; or &ldquo;The
-          Shark&rdquo;.
+          You can guess any of <strong>{PLAYERS.length} golfers</strong> from the PGA Tour and LIV
+          Golf. Nicknames and misspellings work — try &ldquo;Lefty&rdquo; or &ldquo;Speith&rdquo;.
         </p>
         <p className="mt-2">
           Everyone gets the same golfer each day, and a new one arrives at midnight.
