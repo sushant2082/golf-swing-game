@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from 'react'
  * puzzle. Swapping stages changes the `src`, so the element is keyed by stage
  * to force a clean reload instead of a stale first frame.
  */
-export default function SwingPlayer({ swing, stage, revealed, playerName }) {
+export default function SwingPlayer({ swing, stage, revealed, playerName, className }) {
   const videoRef = useRef(null)
   const [failed, setFailed] = useState(false)
   const src = swing?.[String(stage)]
@@ -56,7 +56,7 @@ export default function SwingPlayer({ swing, stage, revealed, playerName }) {
             ? `Video of ${playerName} swinging`
             : 'Looping silhouette of a golfer swinging. Guess who it is.'
         }
-        className="mx-auto block h-auto w-full max-w-sm bg-black"
+        className={className ?? 'mx-auto block h-auto w-full max-w-sm bg-black'}
       />
 
       {failed && (

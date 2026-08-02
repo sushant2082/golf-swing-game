@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Modal from './Modal.jsx'
 import GolferSilhouette from './GolferSilhouette.jsx'
+import SwingPlayer from './SwingPlayer.jsx'
 import CountdownTimer from './CountdownTimer.jsx'
 import { buildShareText, copyToClipboard } from '../game/share.js'
 import { MAX_GUESSES } from '../game/puzzle.js'
@@ -47,12 +48,29 @@ export default function ResultModal({
           : `Today's golfer was ${player.name}.`}
       </p>
 
-      <div className="mb-4 overflow-hidden rounded-xl border border-stone-200 bg-gradient-to-b from-stone-50 to-stone-100 dark:border-stone-800 dark:from-stone-900 dark:to-stone-950">
-        <GolferSilhouette
-          player={player}
-          stage={4}
-          className="mx-auto block h-auto w-full max-w-[240px]"
-        />
+      {/* The payoff is seeing who it actually was, so show the real footage
+          when there is any. The drawn figure is only a stand-in for players
+          without a clip. */}
+      <div className="mb-4 overflow-hidden rounded-xl border border-stone-200 bg-black dark:border-stone-800">
+        {player.swing ? (
+          <SwingPlayer
+            swing={player.swing}
+            stage={4}
+            revealed
+            playerName={player.name}
+            // Capped by height, not width: the clips are portrait, and at full
+            // width the video pushes the name, stats and fact off the screen.
+            className="mx-auto block max-h-[42vh] w-auto bg-black"
+          />
+        ) : (
+          <div className="bg-gradient-to-b from-stone-50 to-stone-100 dark:from-stone-900 dark:to-stone-950">
+            <GolferSilhouette
+              player={player}
+              stage={4}
+              className="mx-auto block h-auto w-full max-w-[240px]"
+            />
+          </div>
+        )}
       </div>
 
       <div className="mb-4 rounded-xl bg-stone-50 p-4 dark:bg-stone-800/60">
