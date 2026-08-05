@@ -37,15 +37,14 @@ export const PLAYERS = ROSTER.map((player) => {
 export const PLAYERS_BY_ID = Object.fromEntries(PLAYERS.map((p) => [p.id, p]))
 
 /**
- * Candidates for the daily puzzle.
+ * Players with footage.
  *
- * Falls back to the full roster when no clips exist yet, so the game is still
- * playable during development rather than crashing on an empty pool. Once real
- * footage lands this narrows to exactly those players.
+ * Deliberately not falling back to the full roster when empty: the schedule
+ * names specific ids, and a silent fallback would quietly make 333
+ * non-answerable players eligible instead of failing loudly. scripts/check-schedule.mjs
+ * is what should catch a missing clip, at build time.
  */
-export const PUZZLE_POOL = PLAYERS.filter((p) => p.answerable).length
-  ? PLAYERS.filter((p) => p.answerable)
-  : PLAYERS
+export const PUZZLE_POOL = PLAYERS.filter((p) => p.answerable)
 
 /** True once at least one clip has been processed. */
 export const HAS_FOOTAGE = PLAYERS.some((p) => p.answerable)

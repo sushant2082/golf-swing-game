@@ -1,0 +1,20 @@
+# Swing video and poster assets are written once per player and never edited in
+# place — a new clip means a new path — so they can be cached indefinitely.
+/swings/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# The og card is replaced in place occasionally; keep it fresh for crawlers.
+/og.png
+  Cache-Control: public, max-age=3600
+
+# Vite fingerprints these, so the filename changes whenever the content does.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# The entry point must never be cached: it is what points at the current bundle,
+# and therefore at the current schedule. A stale index.html would leave players
+# on yesterday's puzzle after a deploy.
+/index.html
+  Cache-Control: no-cache
+/
+  Cache-Control: no-cache

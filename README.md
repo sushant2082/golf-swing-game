@@ -50,26 +50,55 @@ Cloudflare Pages, or S3 + CloudFront without any server-side component.
 
 ```
 src/
-  data/players.js              roster: names, aliases, facts, silhouette params
+  data/
+    roster.js                  GENERATED — researched players, do not hand-edit
+    content.js                 hand-authored overlay: facts, aliases, clip manifest
+    players.js                 merges the two; PLAYERS (guessable) + PUZZLE_POOL
+    schedule.json              GENERATED — the daily answer for each day
   game/
-    puzzle.js                  date → golfer scheduling, no-repeat cycling
+    puzzle.js                  date → golfer lookup against the schedule
+    compare.js                 attribute grid scoring (hit / near / miss / unknown)
     search.js                  name normalisation and autocomplete ranking
     stats.js                   localStorage game state and lifetime stats
-    share.js                   emoji result grid and clipboard handling
+    share.js                   emoji result grid, native share and clipboard
   components/
-    GolferSilhouette.jsx       the procedural SVG figure and pose library
-    SilhouetteReveal.jsx       stage framing, captions and transitions
+    SwingPlayer.jsx            looping silhouette video
+    SilhouetteReveal.jsx       stage framing and captions
     GuessInput.jsx             ARIA combobox autocomplete
-    GuessHistory.jsx           this round's guesses
-    ResultModal.jsx            win/loss reveal, fun fact, share button
-    StatsModal.jsx             streaks, win rate, guess distribution
-    CountdownTimer.jsx         time until the next puzzle
-pipeline/                      offline photo → silhouette tooling (optional)
+    GuessGrid.jsx              Wordle-style attribute comparison grid
+    ResultModal.jsx            reveal footage, stats, share
+    GolferSilhouette.jsx       drawn fallback for players without footage
+pipeline/                      offline clip → silhouette tooling
+scripts/                       schedule generator and validator
 ```
 
-## Adding golfers
+## Adding a swing
 
-Append to `PLAYERS` in `src/data/players.js`. The `id` is used for puzzle
-scheduling and stored game state, so treat it as permanent once shipped.
-Adding players changes the puzzle rotation — fine before launch, disruptive
-after, since it reshuffles which golfer lands on which future date.
+The order clips are uploaded **is** the schedule. Day 1 is the first clip, day
+11 is the eleventh you add. Appending never changes a day that has already been
+played.
+
+```bash
+cp my-clip.mov pipeline/clips/scottie-scheffler.mp4   # name it after the player id
+cd pipeline && .venv/bin/python swing_video.py        # process to silhouette stages
+cd .. && npm run schedule                             # queue it on the next open day
+git add -A && git commit && git push                  # Cloudflare deploys on push
+```
+
+`npm run schedule` is append-only and `npm run check:schedule` enforces that
+against git — it runs automatically on `prebuild`, so a build cannot ship a
+schedule that would change an already-played day.
+
+If you miss a day, the game shows a repeat and the next generator run records
+that repeat permanently, so a clip added afterwards cannot retroactively replace
+it.
+
+Clips work best face-on, 2–4 seconds, one swing, camera locked off, whole body
+in frame. Backgrounds with galleries or heavy foliage make segmentation harder —
+see `pipeline/README.md`.
+
+## Deploying
+
+Cloudflare Pages, building `npm run build` into `dist/` on Node 22. Caching is
+set in `public/_headers`: clip assets are immutable, `index.html` is never
+cached so a new schedule takes effect immediately.

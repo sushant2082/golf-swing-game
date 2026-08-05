@@ -1,16 +1,18 @@
 /**
  * Client-side persistence: per-day game state plus lifetime stats.
  *
- * Everything is namespaced and versioned so a future schema change can migrate
- * rather than silently corrupt. All reads are defensive — localStorage can be
+ * Everything is namespaced and versioned so a schema change can migrate rather
+ * than silently corrupt. All reads are defensive — localStorage can be
  * unavailable (private browsing, blocked cookies) or hold hand-edited junk, and
  * the game must still load.
  */
 
-import { MAX_GUESSES } from './puzzle.js'
+import { MAX_GUESSES, dateKey, daysBetween } from './puzzle.js'
 
-const STATS_KEY = 'swingiq:stats:v1'
-const GAME_KEY = 'swingiq:game:v1'
+// v2: puzzle numbering restarted at #1 for launch, so v1 records carry numbers
+// from a different era and must not be read.
+const STATS_KEY = 'swingiq:stats:v2'
+const GAME_KEY = 'swingiq:game:v2'
 
 const EMPTY_STATS = {
   played: 0,
@@ -20,6 +22,7 @@ const EMPTY_STATS = {
   /** Index 0 = won in 1 guess … index MAX_GUESSES-1 = won on the last guess. */
   distribution: Array(MAX_GUESSES).fill(0),
   lastPlayedNumber: null,
+  lastPlayedDate: null,
 }
 
 function safeRead(key) {
@@ -59,18 +62,23 @@ export function loadStats() {
     maxStreak: num(stored.maxStreak),
     distribution,
     lastPlayedNumber: Number.isFinite(stored.lastPlayedNumber) ? stored.lastPlayedNumber : null,
+    lastPlayedDate: typeof stored.lastPlayedDate === 'string' ? stored.lastPlayedDate : null,
   }
 }
 
 /**
  * Fold a finished game into lifetime stats.
- * Recording the same puzzle number twice is a no-op, so a refresh after the
- * result modal opens can't inflate the streak.
+ *
+ * Streak continuity is decided by date, not by puzzle number. Numbers are only
+ * contiguous with days while the epoch never moves, so comparing them breaks
+ * across any renumbering — dates do not.
  */
-export function recordResult(stats, { puzzleNumber, won, guessCount }) {
+export function recordResult(stats, { puzzleNumber, dateKey: playedOn, won, guessCount }) {
   if (stats.lastPlayedNumber === puzzleNumber) return stats
 
-  const consecutive = stats.lastPlayedNumber === puzzleNumber - 1
+  const consecutive =
+    stats.lastPlayedDate != null && daysBetween(stats.lastPlayedDate, playedOn) === 1
+
   const distribution = stats.distribution.slice()
   if (won && guessCount >= 1 && guessCount <= MAX_GUESSES) {
     distribution[guessCount - 1] += 1
@@ -85,18 +93,31 @@ export function recordResult(stats, { puzzleNumber, won, guessCount }) {
     maxStreak: Math.max(stats.maxStreak, currentStreak),
     distribution,
     lastPlayedNumber: puzzleNumber,
+    lastPlayedDate: playedOn,
   }
   safeWrite(STATS_KEY, next)
   return next
 }
 
-/** Today's in-progress or finished game, or null if this puzzle is untouched. */
-export function loadGame(puzzleNumber) {
+/**
+ * Today's in-progress or finished game, or null if this puzzle is untouched.
+ *
+ * Matches on the answer and the date as well as the number. If a saved game
+ * ever disagreed about who the answer was, restoring it would replay guesses
+ * made against a different golfer — better to start clean than to show a
+ * corrupt board.
+ */
+export function loadGame(puzzleNumber, todayKey, answerId) {
   const stored = safeRead(GAME_KEY)
-  if (!stored || stored.puzzleNumber !== puzzleNumber) return null
-  if (!Array.isArray(stored.guesses)) return null
+  if (!stored || !Array.isArray(stored.guesses)) return null
+  if (stored.puzzleNumber !== puzzleNumber) return null
+  if (stored.dateKey !== todayKey) return null
+  if (stored.answerId !== answerId) return null
+
   return {
     puzzleNumber,
+    dateKey: todayKey,
+    answerId,
     guesses: stored.guesses.filter((g) => typeof g === 'string'),
     status: ['playing', 'won', 'lost'].includes(stored.status) ? stored.status : 'playing',
   }
@@ -110,3 +131,5 @@ export function saveGame(game) {
 export function winPercentage(stats) {
   return stats.played === 0 ? 0 : Math.round((stats.wins / stats.played) * 100)
 }
+
+export { dateKey }

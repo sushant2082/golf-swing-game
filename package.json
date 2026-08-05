@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "schedule": "node scripts/build-schedule.mjs",
+    "check:schedule": "node scripts/check-schedule.mjs",
+    "prebuild": "node scripts/check-schedule.mjs"
   },
   "dependencies": {
     "react": "^19.2.7",

@@ -28,7 +28,7 @@ export default function App() {
     if (restoredFor.current === puzzle.number) return
     restoredFor.current = puzzle.number
 
-    const saved = loadGame(puzzle.number)
+    const saved = loadGame(puzzle.number, puzzle.dateKey, puzzle.player.id)
     if (saved) {
       setGuesses(saved.guesses)
       setStatus(saved.status)
@@ -48,7 +48,7 @@ export default function App() {
     } catch {
       // localStorage unavailable — skip the intro rather than break the game.
     }
-  }, [puzzle.number])
+  }, [puzzle.number, puzzle.dateKey, puzzle.player.id])
 
   const handleGuess = useCallback(
     (player) => {
@@ -60,7 +60,13 @@ export default function App() {
 
       setGuesses(nextGuesses)
       setStatus(nextStatus)
-      saveGame({ puzzleNumber: puzzle.number, guesses: nextGuesses, status: nextStatus })
+      saveGame({
+        puzzleNumber: puzzle.number,
+        dateKey: puzzle.dateKey,
+        answerId: puzzle.player.id,
+        guesses: nextGuesses,
+        status: nextStatus,
+      })
 
       setAnnouncement(
         won
@@ -74,6 +80,7 @@ export default function App() {
         setStats((prev) =>
           recordResult(prev, {
             puzzleNumber: puzzle.number,
+            dateKey: puzzle.dateKey,
             won,
             guessCount: nextGuesses.length,
           }),

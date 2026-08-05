@@ -21,6 +21,34 @@ export function buildShareText({ puzzleNumber, guesses, status }) {
 }
 
 /**
+ * Share the result.
+ *
+ * On mobile the native share sheet is what people actually expect and is the
+ * only route into messaging apps, so it is tried first when available. It is
+ * deliberately not used on desktop, where it opens a clunky OS dialog for
+ * something a clipboard copy does better.
+ *
+ * Returns how it was shared so the UI can say "Copied" or "Shared" accurately
+ * rather than guessing.
+ */
+export async function shareResult(text) {
+  const isTouch = typeof navigator !== 'undefined' && navigator.maxTouchPoints > 0
+
+  if (isTouch && navigator.share) {
+    try {
+      await navigator.share({ text })
+      return 'shared'
+    } catch (err) {
+      // AbortError means the user dismissed the sheet on purpose — don't then
+      // silently copy behind their back.
+      if (err?.name === 'AbortError') return 'cancelled'
+    }
+  }
+
+  return (await copyToClipboard(text)) ? 'copied' : 'failed'
+}
+
+/**
  * Copy to the clipboard, falling back to a hidden textarea for browsers that
  * withhold the async API (older Safari, or any non-secure context).
  */

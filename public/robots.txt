@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Dev-only pages are excluded from the production build, so nothing to disallow.

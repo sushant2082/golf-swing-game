@@ -3,7 +3,7 @@ import Modal from './Modal.jsx'
 import GolferSilhouette from './GolferSilhouette.jsx'
 import SwingPlayer from './SwingPlayer.jsx'
 import CountdownTimer from './CountdownTimer.jsx'
-import { buildShareText, copyToClipboard } from '../game/share.js'
+import { buildShareText, shareResult } from '../game/share.js'
 import { MAX_GUESSES } from '../game/puzzle.js'
 import { ageOf, formatValue } from '../game/compare.js'
 
@@ -25,15 +25,15 @@ export default function ResultModal({
   onShowStats,
   onExpire,
 }) {
-  const [copied, setCopied] = useState(false)
+  const [shareState, setShareState] = useState(null)
   const won = status === 'won'
   const age = ageOf(player)
 
   const share = async () => {
-    const text = buildShareText({ puzzleNumber, guesses, status })
-    const ok = await copyToClipboard(text)
-    setCopied(ok)
-    if (ok) window.setTimeout(() => setCopied(false), 2200)
+    const result = await shareResult(buildShareText({ puzzleNumber, guesses, status }))
+    if (result === 'cancelled') return
+    setShareState(result)
+    window.setTimeout(() => setShareState(null), 2200)
   }
 
   const title = won
@@ -118,12 +118,13 @@ export default function ResultModal({
           onClick={share}
           className="flex-1 rounded-xl bg-emerald-700 px-4 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-stone-900"
         >
-          {copied ? 'Copied ✓' : 'Share'}
+          {{ copied: 'Copied ✓', shared: 'Shared ✓', failed: 'Copy failed' }[shareState] ?? 'Share'}
         </button>
       </div>
 
       <p role="status" aria-live="polite" className="sr-only">
-        {copied ? 'Result copied to clipboard' : ''}
+        {shareState === 'copied' ? 'Result copied to clipboard' : ''}
+        {shareState === 'failed' ? 'Could not copy the result' : ''}
       </p>
     </Modal>
   )
