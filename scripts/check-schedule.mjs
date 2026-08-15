@@ -62,9 +62,15 @@ function main() {
   const previous = committedSchedule()
   if (previous) {
     if (previous.epoch !== epoch) {
-      errors.push(`epoch changed: ${previous.epoch} → ${epoch}. Every puzzle number would shift.`)
+      // Moving the epoch renumbers every puzzle, so it is an error once anyone
+      // has played. Before launch it is legitimate — hence an explicit opt-in
+      // rather than a silent allowance.
+      const msg = `epoch changed: ${previous.epoch} → ${epoch}. Every puzzle number shifts.`
+      if (process.env.ALLOW_EPOCH_RESET === '1') warnings.push(`${msg} (allowed by ALLOW_EPOCH_RESET)`)
+      else errors.push(`${msg} Set ALLOW_EPOCH_RESET=1 only if nobody has played yet.`)
     }
-    for (let i = 0; i < (previous.order?.length ?? 0); i++) {
+    const epochMoved = previous.epoch !== epoch
+    for (let i = 0; !epochMoved && i < (previous.order?.length ?? 0); i++) {
       if (order[i] !== previous.order[i]) {
         errors.push(
           `day ${i + 1} changed: ${previous.order[i]} → ${order[i] ?? '(missing)'}. ` +
@@ -73,7 +79,7 @@ function main() {
         break
       }
     }
-    if (order.length < (previous.order?.length ?? 0)) {
+    if (!epochMoved && order.length < (previous.order?.length ?? 0)) {
       errors.push('schedule got shorter — days were removed')
     }
   } else {

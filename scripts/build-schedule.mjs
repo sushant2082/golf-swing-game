@@ -87,8 +87,11 @@ function main() {
   }
 
   const existing = loadSchedule()
-  const epoch = existing?.epoch ?? today
-  const order = existing?.order ? [...existing.order] : []
+  // --reset restarts numbering at today. Pre-launch only: it renumbers every
+  // puzzle, which is why check-schedule.mjs refuses it without ALLOW_EPOCH_RESET.
+  const reset = process.argv.includes('--reset')
+  const epoch = reset ? today : (existing?.epoch ?? today)
+  const order = existing?.order && !reset ? [...existing.order] : []
   const before = order.length
 
   // 1. Backfill any day that has already passed without an entry. Do this
