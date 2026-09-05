@@ -68,5 +68,75 @@
     "3": "/swings/tiger-woods/3.mp4",
     "4": "/swings/tiger-woods/4.mp4",
     "poster": "/swings/tiger-woods/poster.jpg"
+  },
+  "adam-scott": {
+    "1": "/swings/adam-scott/1.mp4",
+    "2": "/swings/adam-scott/2.mp4",
+    "3": "/swings/adam-scott/3.mp4",
+    "4": "/swings/adam-scott/4.mp4",
+    "poster": "/swings/adam-scott/poster.jpg"
+  },
+  "brooks-koepka": {
+    "1": "/swings/brooks-koepka/1.mp4",
+    "2": "/swings/brooks-koepka/2.mp4",
+    "3": "/swings/brooks-koepka/3.mp4",
+    "4": "/swings/brooks-koepka/4.mp4",
+    "poster": "/swings/brooks-koepka/poster.jpg"
+  },
+  "bubba-watson": {
+    "1": "/swings/bubba-watson/1.mp4",
+    "2": "/swings/bubba-watson/2.mp4",
+    "3": "/swings/bubba-watson/3.mp4",
+    "4": "/swings/bubba-watson/4.mp4",
+    "poster": "/swings/bubba-watson/poster.jpg"
+  },
+  "cameron-smith": {
+    "1": "/swings/cameron-smith/1.mp4",
+    "2": "/swings/cameron-smith/2.mp4",
+    "3": "/swings/cameron-smith/3.mp4",
+    "4": "/swings/cameron-smith/4.mp4",
+    "poster": "/swings/cameron-smith/poster.jpg"
+  },
+  "collin-morikawa": {
+    "1": "/swings/collin-morikawa/1.mp4",
+    "2": "/swings/collin-morikawa/2.mp4",
+    "3": "/swings/collin-morikawa/3.mp4",
+    "4": "/swings/collin-morikawa/4.mp4",
+    "poster": "/swings/collin-morikawa/poster.jpg"
+  },
+  "dustin-johnson": {
+    "1": "/swings/dustin-johnson/1.mp4",
+    "2": "/swings/dustin-johnson/2.mp4",
+    "3": "/swings/dustin-johnson/3.mp4",
+    "4": "/swings/dustin-johnson/4.mp4",
+    "poster": "/swings/dustin-johnson/poster.jpg"
+  },
+  "hideki-matsuyama": {
+    "1": "/swings/hideki-matsuyama/1.mp4",
+    "2": "/swings/hideki-matsuyama/2.mp4",
+    "3": "/swings/hideki-matsuyama/3.mp4",
+    "4": "/swings/hideki-matsuyama/4.mp4",
+    "poster": "/swings/hideki-matsuyama/poster.jpg"
+  },
+  "jordan-spieth": {
+    "1": "/swings/jordan-spieth/1.mp4",
+    "2": "/swings/jordan-spieth/2.mp4",
+    "3": "/swings/jordan-spieth/3.mp4",
+    "4": "/swings/jordan-spieth/4.mp4",
+    "poster": "/swings/jordan-spieth/poster.jpg"
+  },
+  "sergio-garcia": {
+    "1": "/swings/sergio-garcia/1.mp4",
+    "2": "/swings/sergio-garcia/2.mp4",
+    "3": "/swings/sergio-garcia/3.mp4",
+    "4": "/swings/sergio-garcia/4.mp4",
+    "poster": "/swings/sergio-garcia/poster.jpg"
+  },
+  "tommy-fleetwood": {
+    "1": "/swings/tommy-fleetwood/1.mp4",
+    "2": "/swings/tommy-fleetwood/2.mp4",
+    "3": "/swings/tommy-fleetwood/3.mp4",
+    "4": "/swings/tommy-fleetwood/4.mp4",
+    "poster": "/swings/tommy-fleetwood/poster.jpg"
   }
 }
