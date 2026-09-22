@@ -1,4 +1,4 @@
-# Swing IQ 🏌️
+# Swing IQ 
 
 A daily browser guessing game: you're shown the **silhouette of a golfer's
 swing** and have five attempts to name them. One puzzle a day, the same for
